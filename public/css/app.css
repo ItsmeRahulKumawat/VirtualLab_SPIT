@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css?family=Saira&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+
+html,
+body {
+    font-family: "Open Sans", sans-serif;
+    height: 100%;
+}
+
+.topbar {
+    background-color: #1f1b1b;
+    padding: 5px 0 0 0;
+}
+
+.navbar {
+    background-image: linear-gradient(rgb(207, 16, 16), rgb(155, 0, 0));
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+.sidenav {
+    font-weight: 600;
+    font-size: 13px;
+    float: right;
+    width: 160px;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: none;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.sidenav a {
+    color: #cf1010;
+    text-decoration: none;
+    display: block;
+    padding: 6px 8px 6px 16px;
+}
+
+/* post paper */
+h1,
+h2 {
+    font-weight: 700;
+    line-height: 1.1em;
+    color: #333;
+    font-family: "Saira", sans-serif;
+}
+
+.menu {
+    font-family: "Saira", sans-serif;
+    color: #333;
+    font-weight: 700;
+    font-size: large;
+}
+
+.star {
+    color: white;
+}
+
+.redstar {
+    color: #cf1010;
+}
+
+.bttn {
+    padding: 6px 14px;
+    border-color: #9b0000;
+    color: #fff;
+    background-color: #9b0000;
+}
+
+/* footer */
+footer {
+    font-size: 12px;
+    overflow: hidden;
+    background-color: #1f1b1b;
+    padding-top: 40px;
+}
+
+footer .copy {
+    padding-left: 9%;
+}
+
+footer .icon {
+    padding-left: 80%;
+}
+
+footer .fa {
+    font-size: 16px;
+}
+
+#page-wrap {
+    min-height: 100%;
+}
+
+.main {
+    min-height: 100%;
+    margin-bottom: -100px;
+}
+
+.main::after {
+    content: "";
+    display: block;
+}
+
+footer,
+.main::after {
+    height: 0px;
+}
+
+/* Scroll top */
+#scroll-to-top {
+    position: fixed;
+    bottom: 10px;
+    right: 40px;
+    font-weight: bold;
+    width: 40px;
+    height: 40px;
+    background: hsl(0, 100%, 30%);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 10%;
+}
+
+#scroll-to-top .fa {
+    font-size: 22px;
+}
+
+/* Laravel Paginator */
+.page-item.active .page-link {
+    background: hsl(0, 100%, 30%);
+    border-color: hsl(0, 100%, 30%);
+}
+
+.page-link {
+    color: hsl(0, 100%, 30%);
+}
+
+.page-link:hover {
+    color: hsl(0, 100%, 30%);
+}
+
+.addDepartButton {
+    margin-left: 62px;
+    margin-top: 10px;
+}
+
+.addApplicantButton {
+    margin-left: 62px;
+    margin-top: 10px;
+}
+
+.addReimbursement {
+    margin-left: 62px;
+    margin-top: 10px;
+}
+
+.dfile {
+    text-decoration: none;
+}
+
+.dfile:hover {
+    color: #333;
+    text-decoration: none;
+}
