@@ -43,52 +43,48 @@
          <div class="col-md-3" style="float:left">
             <div class="card mb-2">
                <img class="card-img-top"
-                  src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg" alt="Card image cap">
+                  src="/images/prolog.png" alt="Card image cap">
                <div class="card-body">
-                  <h4 class="card-title">Card title</h4>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                     card's content.
+                  <h4 class="card-title">PROLOG</h4>
+                  <p class="card-text">Prolog is a logic programming language associated with artificial intelligence and computational linguistics.
                   </p>
-                  <button type="button" class="button" onclick="location.href='https://fonts.google.com/icons'">Button</button>
+                  <button type="button" class="button" onclick="location.href='/prolog'">Let's GO</button>
                </div>
             </div>
          </div>
          <div class="col-md-3" style="float:left">
             <div class="card mb-2">
                <img class="card-img-top"
-                  src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg" alt="Card image cap">
+                  src="/images/mp_neuron.png" alt="Card image cap">
                <div class="card-body">
-                  <h4 class="card-title">Card title</h4>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                     card's content.
+                  <h4 class="card-title">MP NEURON</h4>
+                  <p class="card-text">The most fundamental unit of deep neural networks is called an artificial neuron/perceptron.
                   </p>
-                  <button type="button" class="button" onclick="location.href='https://fonts.google.com/icons'">Button</button>
+                  <button type="button" class="button" onclick="location.href='/mp_neuron'">Let's GO</button>
                </div>
             </div>
          </div>
          <div class="col-md-3" style="float:left">
             <div class="card mb-2">
                <img class="card-img-top"
-                  src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg" alt="Card image cap">
+                  src="/images/pnn_neuron.png" alt="Card image cap">
                <div class="card-body">
-                  <h4 class="card-title">Card title</h4>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                     card's content.
+                  <h4 class="card-title">PNN NEURON</h4>
+                  <p class="card-text">A probabilistic neural network is a feedforward neural network, which is widely used in pattern recognition problems.
                   </p>
-                  <button type="button" class="button" onclick="location.href='https://fonts.google.com/icons'">Button</button>
+                  <button type="button" class="button" onclick="location.href='https://fonts.google.com/icons'">Let's GO</button>
                </div>
             </div>
          </div>
          <div class="col-md-3" style="float:left">
             <div class="card mb-2">
                <img class="card-img-top"
-                  src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg" alt="Card image cap">
+                  src="/images/bnn.png" alt="Card image cap">
                <div class="card-body">
-                  <h4 class="card-title">Card title</h4>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                     card's content.
+                  <h4 class="card-title">BNN NEURON</h4>
+                  <p class="card-text">Binarized Neural Network (BNN) is also a neural network which consists of binary weights and activations.
                   </p>
-                  <button type="button" class="button" onclick="location.href='https://fonts.google.com/icons'">Button</button>
+                  <button type="button" class="button" onclick="location.href='https://fonts.google.com/icons'">Let's GO</button>
                </div>
             </div>
          </div>
@@ -99,56 +95,93 @@
          <div class="col-md-3" style="float:left">
             <div class="card mb-2">
                <img class="card-img-top"
-                  src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg" alt="Card image cap">
+                  src="/images/cnn.png" alt="Card image cap">
                <div class="card-body">
-                  <h4 class="card-title">Card title</h4>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                     card's content.
+                  <h4 class="card-title">CNN NEURON</h4>
+                  <p class="card-text">A convolutional neural network (CNN, or ConvNet) is a class of deep neural network, commonly applied to analyze visual imagery.
                   </p>
-                  <button type="button" class="button" onclick="location.href='https://fonts.google.com/icons'">Button</button>
+                  <button type="button" class="button" onclick="location.href='https://fonts.google.com/icons'">Let's GO</button>
                </div>
             </div>
          </div>
          <div class="col-md-3" style="float:left">
             <div class="card mb-2">
                <img class="card-img-top"
-                  src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(47).jpg" alt="Card image cap">
+                  src="/images/supervised_nn.png" alt="Card image cap">
                <div class="card-body">
-                  <h4 class="card-title">Card title</h4>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                     card's content.
+                  <h4 class="card-title">SUPERVISED NN MODEL</h4>
+                  <p class="card-text">Supervised learning is a method by which you can use labeled training data to train a function that you can then generalize for new examples.
                   </p>
-                  <button type="button" class="button" onclick="location.href='https://fonts.google.com/icons'">Button</button>
+                  <button type="button" class="button" onclick="location.href='https://fonts.google.com/icons'">Let's GO</button>
                </div>
             </div>
          </div>
          <div class="col-md-3" style="float:left">
             <div class="card mb-2">
                <img class="card-img-top"
-                  src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(48).jpg" alt="Card image cap">
+                  src="/images/fuzzyset.png" alt="Card image cap">
                <div class="card-body">
-                  <h4 class="card-title">Card title</h4>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                     card's content.
+                  <h4 class="card-title">FUZZY SETS</h4>
+                  <p class="card-text">Fuzzy set is a mathematical model of vague qualitative or quantitative data, frequently generated by means of the natural language.
                   </p>
-                  <button type="button" class="button" onclick="location.href='https://fonts.google.com/icons'">Button</button>
+                  <button type="button" class="button" onclick="location.href='https://fonts.google.com/icons'">Let's GO</button>
                </div>
             </div>
          </div>
          <div class="col-md-3" style="float:left">
             <div class="card mb-2">
                <img class="card-img-top"
-                  src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(47).jpg" alt="Card image cap">
+                  src="/images/morgan.png" alt="Card image cap">
                <div class="card-body">
-                  <h4 class="card-title">Card title</h4>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                     card's content.
+                  <h4 class="card-title">DE MORGAN'S LAW</h4>
+                  <p class="card-text">In propositional logic and Boolean algebra, a pair of transformation rules that are both valid rules of inference.
                   </p>
-                  <button type="button" class="button" onclick="location.href='https://fonts.google.com/icons'">Button</button>
+                  <button type="button" class="button" onclick="location.href='https://fonts.google.com/icons'">Let's GO</button>
                </div>
             </div>
          </div>
       </div>
+      <!--/.Second slide-->
+      <!-- Third slide-->
+      <div class="carousel-item">
+         <div class="col-md-3" style="float:left">
+            <div class="card mb-2">
+               <img class="card-img-top"
+                  src="/images/fuzzy_cont.png" alt="Card image cap">
+               <div class="card-body">
+                  <h4 class="card-title">FUZZY CONTROLLER</h4>
+                  <p class="card-text">Fuzzy logic control (FLC) is the most active research area in the application of fuzzy set theory, fuzzy reasoning, and fuzzy logic.
+                  </p>
+                  <button type="button" class="button" onclick="location.href='https://fonts.google.com/icons'">Let's GO</button>
+               </div>
+            </div>
+         </div>
+         <div class="col-md-3" style="float:left">
+            <div class="card mb-2">
+               <img class="card-img-top"
+                  src="/images/genetic.png" alt="Card image cap">
+               <div class="card-body">
+                  <h4 class="card-title">SIMPLE GENETIC APPLICATION</h4>
+                  <p class="card-text">Genetic Algorithms are search algorithm based on mechanics of natural selection and natural genetics.
+                  </p>
+                  <button type="button" class="button" onclick="location.href='https://fonts.google.com/icons'">Let's GO</button>
+               </div>
+            </div>
+         </div>
+         <div class="col-md-3" style="float:left">
+            <div class="card mb-2">
+               <img class="card-img-top"
+                  src="/images/anfis.png" alt="Card image cap">
+               <div class="card-body">
+                  <h4 class="card-title">ANFIS MATLAB</h4>
+                  <p class="card-text">ANFIS is an intelligent Neuro-Fuzzy technique used for the modeling and control of ill-defined and uncertain systems.
+                  </p>
+                  <button type="button" class="button" onclick="location.href='https://fonts.google.com/icons'">Let's GO</button>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--/.Third slide-->
     </div>
 </div>
 @stop
