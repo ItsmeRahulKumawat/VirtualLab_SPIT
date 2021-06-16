@@ -15,11 +15,16 @@
        width:100px;
        height:40px;
        color:#A00202;
+       background: linear-gradient(to left, white 50%, #CC0F0F 50%) right;
+       background-size: 200%;
+       transition: .2s ease-out;
     }
     .button:hover {
-       background-image: linear-gradient(#CC0F0F, #A00202);
-       border:none;
-       color:white;
+        border-color: #CC0F0F;
+        color:white;
+        /* background-image: linear-gradient(#CC0F0F, #A00202); */
+        background-position: left;
+
     }
     .anchor:link, .anchor:visited{
         color:white;

@@ -3,20 +3,20 @@
 <div class="main">
 <header class="bgimg w3-display-container w3-grayscale-min" id="home">
   <div class="w3-display-middle w3-center">
-    <span class="w3-text-white">VIRTUAL LAB</span>
+    <span class="w3-text-white w3-animate-top">VIRTUAL LAB</span>
   </div>
 </header>
 <div class="container" style="min-height: 700px;">
 <div class="space"></div>
-<h2 align="center">Welcome To Virtual Lab </h2>
+<h2 align="center" style="color:#CC0F0F">Welcome To Virtual Lab </h2>
 &nbsp;&nbsp;&nbsp;
 <p>Concept of Virtual labs are to simulate learning environments that allow students to complete laboratory experiments online and explore concepts and theories without stepping into a physical science lab.</p>
-<b>Aim :</b>
+<b  style="color:#CC0F0F">Aim :</b>
 <ul>
    <li>To understand different concept of Computational Intelligence</li>
    <li>To simulate the application based on the computational Intelligence</li>
 </ul>
-<b>Objective :</b>
+<b  style="color:#CC0F0F">Objective :</b>
 &nbsp;&nbsp;&nbsp;
 <ul>
    <li>To introduce students about the latest Computational Intelligence Tools and Techniques/li>
@@ -59,7 +59,7 @@
                <div class="card-body">
                   <h4 class="card-title">MP NEURON</h4>
                   <p class="card-text">The most fundamental unit of deep neural networks is called an artificial neuron/perceptron.
-                  </p>
+                  </p>  
                   <button type="button" class="button" onclick="location.href='/mp_neuron'">Let's GO</button>
                </div>
             </div>
