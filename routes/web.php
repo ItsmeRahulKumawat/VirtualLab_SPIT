@@ -18,6 +18,18 @@ Route::get('/', function () {
 });
 
 Route::view('/homepage','homepage')->name('homepage');
+Route::view('/prolog','prolog')->name('prolog');
+Route::view('/mp_neuron','mp_neuron')->name('mp_neuron');
+Route::view('/pnn','pnn')->name('pnn');
+Route::view('/bnn','bnn')->name('bnn');
+Route::view('/cnn','cnn')->name('cnn');
+Route::view('/supervised_nn','supervised_nn')->name('supervised_nn');
+Route::view('/fuzzysets','fuzzysets')->name('fuzzysets');
+Route::view('/morgan','morgan')->name('morgan');
+Route::view('/fuzzycont','fuzzycont')->name('fuzzycont');
+Route::view('/genetic','genetic')->name('genetic');
+Route::view('/anfis','anfis')->name('anfis');
+
 
 Auth::routes();
 
