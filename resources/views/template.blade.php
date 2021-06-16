@@ -15,6 +15,7 @@
       <link rel="stylesheet" href="/css/font-awesome.css" />
       <link rel="stylesheet" href="/css/template_file.css" />
       <link rel="stylesheet" href="/css/homepage.css" />
+      <link rel="stylesheet" href="/css/w3.css">
       <link href = {{ asset("bootstrap/css/bootstrap.css") }} rel="stylesheet" />
       <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
       <link rel="stylesheet" type="text/css" href="{{ asset('css/fontawesome.css') }}">

@@ -2,27 +2,50 @@
 @section('content')
 <div class="main">
 <header class="bgimg w3-display-container w3-grayscale-min" id="home">
-  <div class="w3-display-middle w3-center">
-    <span class="w3-text-white w3-animate-top">VIRTUAL LAB</span>
+  <div class="w3-right">
+    <span class="w3-text-white w3-animate-bottom" style="margin-right:30px;">VIRTUAL LAB</span>
   </div>
 </header>
 <div class="container" style="min-height: 700px;">
 <div class="space"></div>
-<h2 align="center" style="color:#CC0F0F">Welcome To Virtual Lab </h2>
+<h2 align="center" style="color:#CC0F0F"><b>Welcome To Virtual Lab</b></h2>
 &nbsp;&nbsp;&nbsp;
-<p>Concept of Virtual labs are to simulate learning environments that allow students to complete laboratory experiments online and explore concepts and theories without stepping into a physical science lab.</p>
+<p style="text-align:center">Concept of Virtual labs are to simulate learning environments that allow students to complete laboratory experiments online and explore concepts and theories without stepping into a physical science lab.SPIT is focused on the new techniques and ways to engage students to perform experiments effectively. Virtual 
+laboratories are a great way for learners to practice in a safe, online environment. It is the best IT infrastructure virtual labs for those who want to learn with practice.</p>
+<div class="space"></div>
+<div class="container">
+   <b style="color:#CC0F0F">What is Virtual Lab ?</b>
+      <ul>
+        <li>A virtual Lab is a simulated lab environment typically implemented as a software program which allows the users to perform their experiments.</li>
+      </ul><br>
+</div>
+<div class="container">
 <b  style="color:#CC0F0F">Aim :</b>
 <ul>
    <li>To understand different concept of Computational Intelligence</li>
    <li>To simulate the application based on the computational Intelligence</li>
+   <li>To understand different concept of experiments and subjects.</li>
+	<li>To allow students to make mistakes without fear of not getting the experiment done right.</li>
+	<li>To present abstract ideas that may not normally be easily viewed</li>
+   <li>To simulate the application based on the computational Intelligence</li>
 </ul>
+</div>
+<div class="space"></div>
+<div class="container">
 <b  style="color:#CC0F0F">Objective :</b>
 &nbsp;&nbsp;&nbsp;
 <ul>
-   <li>To introduce students about the latest Computational Intelligence Tools and Techniques/li>
+   <li>To introduce students about the latest Computational Intelligence Tools and Techniques</li>
    <li>To develop rigorous applications in the AI domain.</li>
+   <li> The concept of Virtual lab is to simulate learning environments that allow students to complete laboratory experiments online and explore concepts 
+	and theories without stepping into a physical science lab.</li>
+	<li>These labs are created with the lab’s combinations, illustrations, & assignments to convey key information and engage students in the process of programming and learning.</li>
+	<li>A virtual lab is an on-screen simulator or calculator that helps test ideas and observe results. Learners use advanced technology to perform a series of experiments 
+	that yield authentic results.</li>
+	<li>It reduces installation work of diiferent appliactions. As it consist all the simulators neede for expermients. These lab saves computer memory and RAM.</li>
 </ul>
-&nbsp;&nbsp;&nbsp;
+</div>
+<div class="space"></div>
 <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
    <!--Controls-->
    <div class="controls-top" align="center" style="margin-bottom: 20px;">
