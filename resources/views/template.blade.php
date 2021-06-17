@@ -14,6 +14,7 @@
       <link rel="stylesheet" href="/css/app.css" />
       <link rel="stylesheet" href="/css/font-awesome.css" />
       <link rel="stylesheet" href="/css/template_file.css" />
+      <link rel="stylesheet" href="/css/mainpage.css" />
       <link rel="stylesheet" href="/css/homepage.css" />
       <link rel="stylesheet" href="/css/w3.css">
       <link href = {{ asset("bootstrap/css/bootstrap.css") }} rel="stylesheet" />
@@ -55,7 +56,12 @@
                            <a class="nav-link" href="/">Home</a>
                         </li>
                         <li class="nav-item" id="homepage">
-                           <a class="nav-link" href="/homepage">Virtual Lab</a>
+                        <div class="dropdown">
+                           <a class="nav-link dropbtn" href="/homepage">Virtual Lab</a>
+                           <div class="dropdown-content">
+                              <a href="/homepage/#expList">All Experiments</a>
+                           </div>
+                        </div>
                         </li>
                      </ul>
                   </div>

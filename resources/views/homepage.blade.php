@@ -8,7 +8,7 @@
 </header>
 <div class="container" style="min-height: 700px;">
 <div class="space"></div>
-<h2 align="center" style="color:#CC0F0F"><b>Welcome To Virtual Lab</b></h2>
+<h1 class="w3-xxxlarge w3-center" style="color:#CC0F0F"><b>Welcome To Virtual Lab</b></h1>
 &nbsp;&nbsp;&nbsp;
 <p style="text-align:center">Concept of Virtual labs are to simulate learning environments that allow students to complete laboratory experiments online and explore concepts and theories without stepping into a physical science lab.SPIT is focused on the new techniques and ways to engage students to perform experiments effectively. Virtual 
 laboratories are a great way for learners to practice in a safe, online environment. It is the best IT infrastructure virtual labs for those who want to learn with practice.</p>
@@ -45,6 +45,7 @@ laboratories are a great way for learners to practice in a safe, online environm
 	<li>It reduces installation work of diiferent appliactions. As it consist all the simulators neede for expermients. These lab saves computer memory and RAM.</li>
 </ul>
 </div>
+<h1 class="w3-xxxlarge w3-center" id="expList" style="color:#CC0F0F"><b>All Experiments</b></h1>
 <div class="space"></div>
 <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
    <!--Controls-->
@@ -60,6 +61,7 @@ laboratories are a great way for learners to practice in a safe, online environm
    </ol>
    <!--/.Indicators-->
    <!--Slides-->
+
    <div class="carousel-inner" role="listbox">
       <!--First slide-->
       <div class="carousel-item active">
