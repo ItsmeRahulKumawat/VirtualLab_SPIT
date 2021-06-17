@@ -12,8 +12,13 @@
 <style>
 body {font-size:16px;}
 .w3-bar-item:hover {
-    border-bottom: 5px solid #CC0F0F;
     text-decoration:none;
+    /* border-right:5px solid #CC0F0F; */
+    background-image: linear-gradient(to left,white,white,white,white,white,#CC0F0F);
+    border-radius:5px;
+  }
+.w3-bar-item {
+  color:black;
 }
 </style>
 <body>
@@ -25,12 +30,12 @@ body {font-size:16px;}
     <h3 class="w3-padding-64"></h3>
   </div>
   <div class="w3-bar-block" style="margin-top:30px;">
-    <a href="#showcase" onclick="w3_close()" class="effect w3-bar-item w3-button w3-hover-white" style="color:black;">Introduction</a> 
-    <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white" style="color:black">Procedure</a> 
-    <a href="#designers" onclick="w3_close()" class=" w3-bar-item w3-button w3-hover-white" style="color:black">Simulation</a> 
-    <a href="#packages" onclick="w3_close()" class=" w3-bar-item w3-button w3-hover-white" style="color:black">Assignment</a> 
-    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white" style="color:black">Sub Problems</a> 
-    <a href="#contact" onclick="w3_close()" class=" w3-bar-item w3-button w3-hover-white" style="color:black">Feedback</a>
+    <a href="#showcase" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Introduction</a> 
+    <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Procedure</a> 
+    <a href="#designers" onclick="w3_close()" class=" w3-bar-item w3-button w3-hover-white">Simulation</a> 
+    <a href="#packages" onclick="w3_close()" class=" w3-bar-item w3-button w3-hover-white">Assignment</a> 
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Sub Problems</a> 
+    <a href="#contact" onclick="w3_close()" class=" w3-bar-item w3-button w3-hover-white">Feedback</a>
   </div>
 </nav>
 
