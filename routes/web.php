@@ -31,6 +31,9 @@ Route::view('/genetic','genetic')->name('genetic');
 Route::view('/anfis','anfis')->name('anfis');
 
 
+Route::view('/prolog-sub/monkey','prolog-sub/monkey')->name('prolog-sub.monkey');
+
+
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

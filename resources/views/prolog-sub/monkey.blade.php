@@ -52,7 +52,7 @@ body {font-size:16px;}
 
   <!-- Prolog -->
   <div class="w3-container" style="margin-top:40px" id="intro">
-    <h1 class="w3-xxxlarge" style="color:#CC0F0F"><b>PROLOG</b></h1>
+    <h1 class="w3-xxxlarge" style="color:#CC0F0F"><b>Monkey Banana</b></h1>
     <h1 style="font-size:30px; margin-top:30px;"><b>Introduction.</b></h1>
     <hr style="width:50px;border:5px solid #A00202" class="w3-round">
   </div>
