@@ -43,6 +43,32 @@ Route::view('/mp-sub/activate','mp-sub/activate')->name('mp-sub.activate');
 Route::view('/mp-sub/alphabet','mp-sub/alphabet')->name('mp-sub.alphabet');
 Route::view('/mp-sub/xor','mp-sub/xor')->name('mp-sub.xor');
 
+//pnn-sub
+Route::view('/pnn-sub/c_section','pnn-sub/c_section')->name('pnn-sub.c_section');
+Route::view('/pnn-sub/stud_res','pnn-sub/stud_res')->name('pnn-sub.stud_res');
+
+//simplegenetic-sub
+Route::view('/simplegenetic-sub/genetic_algo','simplegenetic-sub/genetic_algo')->name('simplegenetic-sub.genetic_algo');
+
+//anfis-sub
+Route::view('/anfis-sub/impl_anfis','anfis-sub/impl_anfis')->name('anfis-sub.impl_anfis');
+
+//bnn-sub
+Route::view('/bnn-sub/covid_pred','bnn-sub/covid_pred')->name('bnn-sub.covid_pred');
+Route::view('/bnn-sub/yahoo_stock','bnn-sub/yahoo_stock')->name('bnn-sub.yahoo_stock');
+
+//cnn-sub
+Route::view('/cnn-sub/face_recog','cnn-sub/face_recog')->name('cnn-sub.face_recog');
+
+//demorgan-sub
+Route::view('/demorgan-sub/all_laws','demorgan-sub/all_laws')->name('demorgan-sub.all_laws');
+Route::view('/demorgan-sub/maxmin_comp','demorgan-sub/maxmin_comp')->name('demorgan-sub.maxmin_comp');
+Route::view('/demorgan-sub/maxprod_comp','demorgan-sub/maxprod_comp')->name('demorgan-sub.maxprod_comp');
+
+//fuzzysets-sub
+Route::view('/fuzzysets-sub/fuzzy_opertaions','fuzzysets-sub/fuzzy_opertaions')->name('fuzzysets-sub.fuzzy_opertaions');
+
+
 
 
 Auth::routes();
