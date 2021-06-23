@@ -32,6 +32,11 @@ Route::view('/anfis','anfis')->name('anfis');
 
 
 Route::view('/prolog-sub/monkey','prolog-sub/monkey')->name('prolog-sub.monkey');
+Route::view('/prolog-sub/list','prolog-sub/list')->name('prolog-sub.list');
+Route::view('/prolog-sub/hanoi','prolog-sub/hanoi')->name('prolog-sub.hanoi');
+Route::view('/prolog-sub/sudoku','prolog-sub/sudoku')->name('prolog-sub.sudoku');
+Route::view('/prolog-sub/puzzle','prolog-sub/puzzle')->name('prolog-sub.puzzle');
+Route::view('/prolog-sub/queens','prolog-sub/queens')->name('prolog-sub.queens');
 
 
 Auth::routes();

@@ -58,26 +58,20 @@ body {font-size:16px;}
 
   <!-- Prolog -->
   <div class="w3-container" style="margin-top:40px" id="intro">
-    <h1 class="w3-xxxlarge" style="color:#CC0F0F"><b>Monkey Banana</b></h1>
+    <h1 class="w3-xxxlarge" style="color:#CC0F0F"><b>Tower of Hanoi</b></h1>
     <h1 style="font-size:30px; margin-top:30px;"><b>Introduction.</b></h1>
     <hr style="width:50px;border:5px solid #A00202" class="w3-round">
-    <b  style="color:#CC0F0F">Problem Statement</b>
-<p>A monkey is in a room. A bunch of bananas is hanging from the ceiling. The monkey cannot 
-reach then bananas directly. There is a box in the corner of the room. How can the monkey 
-get the bananas?</p><br>
-
-<img src="/images/monkey-banana/monkey.jpg"></img>
+    <b style="color:#CC0F0F">Problem Statement</b>
+<p>Tower of Hanoi is a mathematical puzzle where we have three rods and n disks. The objective of the puzzle is to move the entire 
+stack to another rod.</p><br>
+<img src="/images/monkey-banana/hanoi.png" alt="towerofhanoi image">
 <div class="space"></div>
-<b style="color:#CC0F0F">So how can the monkey get the bananas?</b>
-<p>So if the monkey is clever enough, he can come to the block, drag the block to the center, 
-climb on it, and get the banana. Below are few observations in this case-</p>
+<p  style="color:#CC0F0F">This game has some rules:</p>
 <ul>
-	<li>Monkey can reach the block, if both of them are at the same level. From the above 
-	image, we can see that both the monkey and the block are on the floor.</li>
-	<li>If the block position is not at the center, then monkey can drag it to the center.</li>
-	<li>If monkey and the block both are on the floor, and block is at the center, then the 
-	monkey can climb up on the block. So the vertical position of the monkey will be changed.</li>
-	<li>When the monkey is on the block, and block is at the center, then the monkey can get the bananas.</li>
+	<li>Only one disk can be moved at a time.</li>
+	<li>Each move consists of taking the upper disk from one of the stacks and placing it on top of another 
+	stack i.e. a disk can only be moved if it is the uppermost disk on a stack.</li>
+	<li>No disk may be placed on top of a smaller disk.</li>
 </ul>
 
   </div>
@@ -86,17 +80,24 @@ climb on it, and get the banana. Below are few observations in this case-</p>
   <div class="w3-container" id="procedure" style="margin-top:75px">
   <h1 style="font-size:30px; margin-top:30px;"><b>Procedure.</b></h1>
   <hr style="width:50px;border:5px solid #A00202" class="w3-round">
-  <p>We have some predicates that will move from one state to another state, by performing action.</p>
+  <p>To solve this, we have to write one procedure move(N, Source, Target, auxiliary). Here N number of disks will have to be shifted from Source peg to Target peg keeping Auxiliary peg as intermediate.</p><br>
+<p style="color:#CC0F0F">example – move(n, source, target, auxiliary).</p>
 <ul>
-	<li>When the block is at the middle, and monkey is on top of the block, and monkey does not have 
-	the banana (i.e. has not state), then using the grasp action, it will change from has not state to have state.</li>
-	<li>From the floor, it can move to the top of the block (i.e. on top state), by performing the action climb.</li>
-	<li>The push or drag operation moves the block from one place to another.</li>
-	<li>Monkey can move from one place to another using walk or move clauses.</li>
+	<li>Move top disk from source to target</li>
+	<li>Move top disk from source to auxiliary</li>
+	<li>Move top disk from target to auxiliary</li>
+	<li>Move top disk from source to target</li>
+	<li>Move top disk from auxiliary to source</li>
+	<li>Move top disk from auxiliary to target</li>	
+	<li>Move top disk from source to target</li>
+
+</li>	
 </ul>
-<p>Another predicate will be canget(). Here we pass a state, so this will perform move predicate from one 
-state to another using different actions, then perform canget() on state 2. When we have reached to the 
-state ‘has>’, this indicates ‘has banana’. We will stop the execution.</p>
+<p style="color:#CC0F0F">Note: </p>
+<ul>
+	<li>Tower of hanoi problem is an example of recursion and backtracking. </li>
+	<li>There must be a termination condition in the recursion problems.</li>
+</ul>
   </div>
   
   <!-- simulation -->
@@ -128,15 +129,15 @@ state ‘has>’, this indicates ‘has banana’. We will stop the execution.</
    <div class="carousel-inner" role="listbox">
       <!--First slide-->
       <div class="carousel-item active">
-         <div class="col-md-3" style="float:left">
+      <div class="col-md-3" style="float:left">
             <div class="card mb-2">
                <img class="card-img-top"
-                  src="/images/Prolog-sub/hanoi.jpg" alt="Card image cap">
+                  src="/images/Prolog-sub/monkey.png" alt="Card image cap">
                <div class="card-body">
-                  <h4 class="card-title">Tower of Hanoi</h4>
+                  <h4 class="card-title">Monkey Banana</h4>
                   <p class="card-text">
                   </p>
-                  <button type="button" class="button" onclick="location.href='{{route('prolog-sub.hanoi')}}'">Let's GO</button>
+                  <button type="button" class="button" onclick="location.href='{{route('prolog-sub.monkey')}}'">Let's GO</button>
                </div>
             </div>
          </div>

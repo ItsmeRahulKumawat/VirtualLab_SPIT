@@ -128,6 +128,18 @@ state ‘has>’, this indicates ‘has banana’. We will stop the execution.</
    <div class="carousel-inner" role="listbox">
       <!--First slide-->
       <div class="carousel-item active">
+      <div class="col-md-3" style="float:left">
+            <div class="card mb-2">
+               <img class="card-img-top"
+                  src="/images/Prolog-sub/monkey.png" alt="Card image cap">
+               <div class="card-body">
+                  <h4 class="card-title">Monkey Banana</h4>
+                  <p class="card-text">
+                  </p>
+                  <button type="button" class="button" onclick="location.href='{{route('prolog-sub.monkey')}}'">Let's GO</button>
+               </div>
+            </div>
+         </div>
          <div class="col-md-3" style="float:left">
             <div class="card mb-2">
                <img class="card-img-top"
@@ -161,18 +173,6 @@ state ‘has>’, this indicates ‘has banana’. We will stop the execution.</
                   <p class="card-text">
                   </p>  
                   <button type="button" class="button" onclick="location.href='{{route('prolog-sub.list')}}'">Let's GO</button>
-               </div>
-            </div>
-         </div>
-         <div class="col-md-3" style="float:left">
-            <div class="card mb-2">
-               <img class="card-img-top"
-                  src="/images/Prolog-sub/qeen.jpg" alt="Card image cap">
-               <div class="card-body">
-                  <h4 class="card-title">Eight Queens</h4>
-                  <p class="card-text">
-                  </p>
-                  <button type="button" class="button" onclick="location.href='{{route('prolog-sub.queens')}}'">Let's GO</button>
                </div>
             </div>
          </div>

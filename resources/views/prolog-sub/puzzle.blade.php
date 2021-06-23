@@ -58,47 +58,29 @@ body {font-size:16px;}
 
   <!-- Prolog -->
   <div class="w3-container" style="margin-top:40px" id="intro">
-    <h1 class="w3-xxxlarge" style="color:#CC0F0F"><b>Monkey Banana</b></h1>
+    <h1 class="w3-xxxlarge" style="color:#CC0F0F"><b>List Basics</b></h1>
     <h1 style="font-size:30px; margin-top:30px;"><b>Introduction.</b></h1>
     <hr style="width:50px;border:5px solid #A00202" class="w3-round">
-    <b  style="color:#CC0F0F">Problem Statement</b>
-<p>A monkey is in a room. A bunch of bananas is hanging from the ceiling. The monkey cannot 
-reach then bananas directly. There is a box in the corner of the room. How can the monkey 
-get the bananas?</p><br>
-
-<img src="/images/monkey-banana/monkey.jpg"></img>
-<div class="space"></div>
-<b style="color:#CC0F0F">So how can the monkey get the bananas?</b>
-<p>So if the monkey is clever enough, he can come to the block, drag the block to the center, 
-climb on it, and get the banana. Below are few observations in this case-</p>
+    <b style="color:#CC0F0F">Problem Statement</b>
+<p>Find the last element of a list.</p><br>
+<img src="/images/monkey-banana/list.jpg"></img>
+<p>Lists in Prolog are themselves terms, and consist of a sequence of terms separated from one-another by commas and enclosed at each end by matching square brackets.</p>
 <ul>
-	<li>Monkey can reach the block, if both of them are at the same level. From the above 
-	image, we can see that both the monkey and the block are on the floor.</li>
-	<li>If the block position is not at the center, then monkey can drag it to the center.</li>
-	<li>If monkey and the block both are on the floor, and block is at the center, then the 
-	monkey can climb up on the block. So the vertical position of the monkey will be changed.</li>
-	<li>When the monkey is on the block, and block is at the center, then the monkey can get the bananas.</li>
+	<li>The first element of a list is called the head of the list, and the remainder is called the tail of the list.</li>
+	<li>The last element of every non-empty list is the empty list.</li>
+	<li>Prolog provides a convenient notation that can be used to match against the head and tail of any list.<br>[ H | T ]</li>
+	<li>Where H will match against the head, and T against the tail.</li>
 </ul>
-
-  </div>
 
   <!-- procedure -->
   <div class="w3-container" id="procedure" style="margin-top:75px">
   <h1 style="font-size:30px; margin-top:30px;"><b>Procedure.</b></h1>
   <hr style="width:50px;border:5px solid #A00202" class="w3-round">
-  <p>We have some predicates that will move from one state to another state, by performing action.</p>
+  <p>To find the last element of a list:</p>
 <ul>
-	<li>When the block is at the middle, and monkey is on top of the block, and monkey does not have 
-	the banana (i.e. has not state), then using the grasp action, it will change from has not state to have state.</li>
-	<li>From the floor, it can move to the top of the block (i.e. on top state), by performing the action climb.</li>
-	<li>The push or drag operation moves the block from one place to another.</li>
-	<li>Monkey can move from one place to another using walk or move clauses.</li>
+	<li>Example:<br>?- my_last(X,[a,b,c,d]).<br>X = d</li>
 </ul>
-<p>Another predicate will be canget(). Here we pass a state, so this will perform move predicate from one 
-state to another using different actions, then perform canget() on state 2. When we have reached to the 
-state ‘has>’, this indicates ‘has banana’. We will stop the execution.</p>
   </div>
-  
   <!-- simulation -->
   <div class="w3-container" id="simulation" style="margin-top:75px">
     <h1 style="font-size:30px; margin-top:30px;"><b>Simulation.</b></h1>
@@ -128,6 +110,18 @@ state ‘has>’, this indicates ‘has banana’. We will stop the execution.</
    <div class="carousel-inner" role="listbox">
       <!--First slide-->
       <div class="carousel-item active">
+      <div class="col-md-3" style="float:left">
+            <div class="card mb-2">
+               <img class="card-img-top"
+                  src="/images/Prolog-sub/monkey.png" alt="Card image cap">
+               <div class="card-body">
+                  <h4 class="card-title">Monkey Banana</h4>
+                  <p class="card-text">
+                  </p>
+                  <button type="button" class="button" onclick="location.href='{{route('prolog-sub.monkey')}}'">Let's GO</button>
+               </div>
+            </div>
+         </div>
          <div class="col-md-3" style="float:left">
             <div class="card mb-2">
                <img class="card-img-top"
@@ -143,12 +137,12 @@ state ‘has>’, this indicates ‘has banana’. We will stop the execution.</
          <div class="col-md-3" style="float:left">
             <div class="card mb-2">
                <img class="card-img-top"
-                  src="/images/Prolog-sub/puzzle.png" alt="Card image cap">
+                  src="/images/Prolog-sub/qeen.jpg" alt="Card image cap">
                <div class="card-body">
-                  <h4 class="card-title">8 Puzzle</h4>
+                  <h4 class="card-title">Eight Queens</h4>
                   <p class="card-text">
                   </p>
-                  <button type="button" class="button" onclick="location.href='{{route('prolog-sub.puzzle')}}'">Let's GO</button>
+                  <button type="button" class="button" onclick="location.href='{{route('prolog-sub.queens')}}'">Let's GO</button>
                </div>
             </div>
          </div>
@@ -161,18 +155,6 @@ state ‘has>’, this indicates ‘has banana’. We will stop the execution.</
                   <p class="card-text">
                   </p>  
                   <button type="button" class="button" onclick="location.href='{{route('prolog-sub.list')}}'">Let's GO</button>
-               </div>
-            </div>
-         </div>
-         <div class="col-md-3" style="float:left">
-            <div class="card mb-2">
-               <img class="card-img-top"
-                  src="/images/Prolog-sub/qeen.jpg" alt="Card image cap">
-               <div class="card-body">
-                  <h4 class="card-title">Eight Queens</h4>
-                  <p class="card-text">
-                  </p>
-                  <button type="button" class="button" onclick="location.href='{{route('prolog-sub.queens')}}'">Let's GO</button>
                </div>
             </div>
          </div>
@@ -222,9 +204,6 @@ state ‘has>’, this indicates ‘has banana’. We will stop the execution.</
 
 <!-- End page content -->
 </div>
-
-<!-- W3.CSS Container -->
-<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></p></div>
 
 <script>
 // Script to open and close sidebar

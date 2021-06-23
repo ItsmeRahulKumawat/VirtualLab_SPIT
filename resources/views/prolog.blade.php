@@ -138,7 +138,7 @@ body {font-size:16px;}
                   <h4 class="card-title">Tower of Hanoi</h4>
                   <p class="card-text">
                   </p>
-                  <button type="button" class="button" onclick="location.href='/bnn'">Let's GO</button>
+                  <button type="button" class="button" onclick="location.href='{{route('prolog-sub.hanoi')}}'">Let's GO</button>
                </div>
             </div>
          </div>
@@ -150,7 +150,7 @@ body {font-size:16px;}
                   <h4 class="card-title">8 Puzzle</h4>
                   <p class="card-text">
                   </p>
-                  <button type="button" class="button" onclick="location.href='/fuzzysets'">Let's GO</button>
+                  <button type="button" class="button" onclick="location.href='{{route('prolog-sub.puzzle')}}'">Let's GO</button>
                </div>
             </div>
          </div>
@@ -162,7 +162,7 @@ body {font-size:16px;}
                   <h4 class="card-title">List Basic</h4>
                   <p class="card-text">
                   </p>  
-                  <button type="button" class="button" onclick="location.href='/mp_neuron'">Let's GO</button>
+                  <button type="button" class="button" onclick="location.href='{{route('prolog-sub.list')}}'">Let's GO</button>
                </div>
             </div>
          </div>
@@ -178,7 +178,7 @@ body {font-size:16px;}
                   <h4 class="card-title">Eight Queens</h4>
                   <p class="card-text">
                   </p>
-                  <button type="button" class="button" onclick="location.href='/cnn'">Let's GO</button>
+                  <button type="button" class="button" onclick="location.href='{{route('prolog-sub.queens')}}'">Let's GO</button>
                </div>
             </div>
          </div>
@@ -190,7 +190,7 @@ body {font-size:16px;}
                   <h4 class="card-title">Sudoku</h4>
                   <p class="card-text">
                   </p>
-                  <button type="button" class="button" onclick="location.href='/morgan'">Let's GO</button>
+                  <button type="button" class="button" onclick="location.href='{{route('prolog-sub.sudoku')}}'">Let's GO</button>
                </div>
             </div>
          </div>
