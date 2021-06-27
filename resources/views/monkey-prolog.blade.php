@@ -65,13 +65,13 @@ body {font-size:16px;}
   
   <!-- simulation -->
   <div class="w3-container" id="simulation" style="margin-top:75px">
-    <h1 style="font-size:30px; margin-top:30px;""><b>Simulation.</b></h1>
+    <h1 style="font-size:30px; margin-top:30px;"><b>Simulation.</b></h1>
     <hr style="width:50px;border:5px solid #A00202" class="w3-round">
   </div>
 
   <!-- Prolog experiment -->
   <div class="w3-container" id="prologExp" style="margin-top:75px">
-    <h1 style="font-size:30px; margin-top:30px;""><b>Prolog Problem Statements.</b></h1>
+    <h1 style="font-size:30px; margin-top:30px;"><b>Prolog Problem Statements.</b></h1>
     <hr style="width:50px;border:5px solid #A00202" class="w3-round">
   </div>
 
@@ -79,7 +79,7 @@ body {font-size:16px;}
   <div class="w3-container" id="contact" style="margin-top:75px">
     <h1 style="font-size:30px; margin-top:30px;"><b>Feedback.</b></h1>
     <hr style="width:50px;border:5px solid #A00202" class="w3-round">
-    <p>Do you want us to improve something, Let us know we will try our best to improve it :) HAPPY LEARNING!</p>
+    <p>Do you want us to improve something, Let us know we will try our best to improve it :( HAPPY LEARNING!</p>
     <form action="/action_page.php" target="_blank">
       <div class="w3-section">
         <label>Name</label>
