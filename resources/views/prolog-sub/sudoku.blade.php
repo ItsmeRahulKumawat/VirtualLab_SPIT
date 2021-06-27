@@ -58,27 +58,19 @@ body {font-size:16px;}
 
   <!-- Prolog -->
   <div class="w3-container" style="margin-top:40px" id="intro">
-    <h1 class="w3-xxxlarge" style="color:#CC0F0F"><b>Monkey Banana</b></h1>
+    <h1 class="w3-xxxlarge" style="color:#CC0F0F"><b>Sudoku</b></h1>
     <h1 style="font-size:30px; margin-top:30px;"><b>Introduction.</b></h1>
     <hr style="width:50px;border:5px solid #A00202" class="w3-round">
     <b  style="color:#CC0F0F">Problem Statement</b>
-<p>A monkey is in a room. A bunch of bananas is hanging from the ceiling. The monkey cannot 
-reach then bananas directly. There is a box in the corner of the room. How can the monkey 
-get the bananas?</p><br>
-
-<img src="/images/monkey-banana/monkey.jpg"></img>
-<div class="space"></div>
-<b style="color:#CC0F0F">So how can the monkey get the bananas?</b>
-<p>So if the monkey is clever enough, he can come to the block, drag the block to the center, 
-climb on it, and get the banana. Below are few observations in this case-</p>
+    <p>A sudoku puzzle is a 9x9 table. In the final solution for the puzzle, each of the 81 cells in the table should contain an integer number from 1 to 9 such that:</p><br>
 <ul>
-	<li>Monkey can reach the block, if both of them are at the same level. From the above 
-	image, we can see that both the monkey and the block are on the floor.</li>
-	<li>If the block position is not at the center, then monkey can drag it to the center.</li>
-	<li>If monkey and the block both are on the floor, and block is at the center, then the 
-	monkey can climb up on the block. So the vertical position of the monkey will be changed.</li>
-	<li>When the monkey is on the block, and block is at the center, then the monkey can get the bananas.</li>
+	<li>no row contains the same number twice (or more)</li>
+	<li>no column contains the same number twice</li>
+	<li>no block contains the same number twice</li>
 </ul>
+<img src="/images/monkey-banana/sudoku.jpg" alt="sudoku_img">
+<div class="space"></div>
+<p>In the initial puzzle, some of the numbers in the cells are given. To solve the puzzle, you have to find all the remaining numbers.</p>
 
   </div>
 
@@ -86,17 +78,22 @@ climb on it, and get the banana. Below are few observations in this case-</p>
   <div class="w3-container" id="procedure" style="margin-top:75px">
   <h1 style="font-size:30px; margin-top:30px;"><b>Procedure.</b></h1>
   <hr style="width:50px;border:5px solid #A00202" class="w3-round">
-  <p>We have some predicates that will move from one state to another state, by performing action.</p>
+  <p>  | ?- sudoku(X, Y).
+This is called the most general query, since all arguments are fresh variables. Declaratively, we are asking Prolog: "Are there any solutions 
+whatsoever?" In this case, the system answers with:
+    X = [_#3(1..4),_#24(1..4),...etc.]
+    Y = [_#3(1..4),_#24(1..4),...etc.]</p>
 <ul>
-	<li>When the block is at the middle, and monkey is on top of the block, and monkey does not have 
-	the banana (i.e. has not state), then using the grasp action, it will change from has not state to have state.</li>
-	<li>From the floor, it can move to the top of the block (i.e. on top state), by performing the action climb.</li>
-	<li>The push or drag operation moves the block from one place to another.</li>
-	<li>Monkey can move from one place to another using walk or move clauses.</li>
+	<li> you have to apply a concrete enumeration of remaining variables. In Constraint Logic Programming 
+	over Integers, this search is called labeling and provided by predicates like fd_labeling/2 or similar, depending on your Prolog system</li>
+	<li>A partial instantiation of the rows turns this into a completion task, which is what we commonly understand as a Sudoku puzzle.</li>
+	<li>a list of 9 rows that are to be completed to a Sudoku Latin square. Each row is a list of 9 variables, which can also be already instantiated to integers to fill in initial elements.</li>	
 </ul>
-<p>Another predicate will be canget(). Here we pass a state, so this will perform move predicate from one 
-state to another using different actions, then perform canget() on state 2. When we have reached to the 
-state ‘has>’, this indicates ‘has banana’. We will stop the execution.</p>
+<p>Note: </p>
+<ul>
+	<li>We can use constraint logic programming over integers, also known as CLP(FD), which is available in many Prolog systems. This is one of the most important and 
+	most prominent applications of constraint logic programming and even of logic programming in general.</li>
+</ul>
   </div>
   
   <!-- simulation -->
@@ -189,6 +186,30 @@ state ‘has>’, this indicates ‘has banana’. We will stop the execution.</
                   <p class="card-text">
                   </p>
                   <button type="button" class="button" onclick="location.href='{{route('prolog-sub.queens')}}'">Let's GO</button>
+               </div>
+            </div>
+         </div>
+         <div class="col-md-3" style="float:left">
+            <div class="card mb-2">
+               <img class="card-img-top"
+                  src="/images/Prolog-sub/tictac.png" alt="Card image cap">
+               <div class="card-body">
+                  <h4 class="card-title">Tic Tac Toe</h4>
+                  <p class="card-text">
+                  </p>
+                  <button type="button" class="button" onclick="location.href='{{route('prolog-sub.tictactoe')}}'">Let's GO</button>
+               </div>
+            </div>
+         </div>
+         <div class="col-md-3" style="float:left">
+            <div class="card mb-2">
+               <img class="card-img-top"
+                  src="/images/Prolog-sub/waterjug.png" alt="Card image cap">
+               <div class="card-body">
+                  <h4 class="card-title">Water Jug</h4>
+                  <p class="card-text">
+                  </p>
+                  <button type="button" class="button" onclick="location.href='{{route('prolog-sub.waterjug')}}'">Let's GO</button>
                </div>
             </div>
          </div>

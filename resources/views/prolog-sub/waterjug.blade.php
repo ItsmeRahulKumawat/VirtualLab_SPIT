@@ -58,48 +58,48 @@ body {font-size:16px;}
 
   <!-- Prolog -->
   <div class="w3-container" style="margin-top:40px" id="intro">
-    <h1 class="w3-xxxlarge" style="color:#CC0F0F"><b>Tower of Hanoi</b></h1>
+    <h1 class="w3-xxxlarge" style="color:#CC0F0F"><b>Water Jug</b></h1>
     <h1 style="font-size:30px; margin-top:30px;"><b>Introduction.</b></h1>
     <hr style="width:50px;border:5px solid #A00202" class="w3-round">
     <b style="color:#CC0F0F">Problem Statement</b>
-<p>Tower of Hanoi is a mathematical puzzle where we have three rods and n disks. The objective of the puzzle is to move the entire 
-stack to another rod.</p><br>
-<img src="/images/monkey-banana/hanoi.png" alt="towerofhanoi image">
-<div class="space"></div>
-<p  style="color:#CC0F0F">This game has some rules:</p>
+    <p>We are given 2 jugs, a 4-liter one and a 3-liter one. Neither has any measuring markers on it. There is a 
+pump that can be used to fill the jugs with water. How can we get exactly 2 liters of water in to the 4-liter jug?</p><br>
+<img src="/images/monkey-banana/waterjug.jpg">
+<p>To solve this problem we have to make some assumptions not mentioned in the problem.</p>
+<p>They are as follows:</p>
 <ul>
-	<li>Only one disk can be moved at a time.</li>
-	<li>Each move consists of taking the upper disk from one of the stacks and placing it on top of another 
-	stack i.e. a disk can only be moved if it is the uppermost disk on a stack.</li>
-	<li>No disk may be placed on top of a smaller disk.</li>
+	<li>We can fill a jug from the pump. </li>
+	<li>We can pour water out of a jug to the ground.</li>
+	<li>We can pour water from one jug to another.</li>
+	<li>There is no measuring device available.</li>
 </ul>
-
-  </div>
 
   <!-- procedure -->
   <div class="w3-container" id="procedure" style="margin-top:75px">
   <h1 style="font-size:30px; margin-top:30px;"><b>Procedure.</b></h1>
   <hr style="width:50px;border:5px solid #A00202" class="w3-round">
-  <p>To solve this, we have to write one procedure move(N, Source, Target, auxiliary). Here N number of disks will have to be shifted from Source peg to Target peg keeping Auxiliary peg as intermediate.</p><br>
-<p style="color:#CC0F0F">example – move(n, source, target, auxiliary).</p>
+  <p>We will represent the state of the problem as a tuple(x,y) where x represents the amount of water in the 
+4-liter jug and y represents the amount of water in the 3-liter jug.</p>
 <ul>
-	<li>Move top disk from source to target</li>
-	<li>Move top disk from source to auxiliary</li>
-	<li>Move top disk from target to auxiliary</li>
-	<li>Move top disk from source to target</li>
-	<li>Move top disk from auxiliary to source</li>
-	<li>Move top disk from auxiliary to target</li>	
-	<li>Move top disk from source to target</li>
-
-</li>	
+	<li>Note: 0≤x≤4 , 0≤y≤3</li>
+	<li>Our initial state: (0,0)</li>
+	<li>Goal predicate state: (2,y) where 0≤y≤3</li>
+	<li>We can use DFS algorithm to acheive the predicate solution.</li>
 </ul>
-<p style="color:#CC0F0F">Note: </p>
+<p>The operations you can perform are: </p>
 <ul>
-	<li>Tower of hanoi problem is an example of recursion and backtracking. </li>
-	<li>There must be a termination condition in the recursion problems.</li>
+	<li>Empty a Jug x, (X, Y)->(0, Y) Empty Jug y</li>
+	<li>Fill a Jug x, (0, 0)->(X, 0) Fill Jug y</li>
+	<li>Pour water from one jug to the other until one of the jugs is either empty or full, (X, Y) -> (X-d, Y+d)</li>
+</ul>
+
+<p>Note: </p>
+<ul>
+	<li>(X, Y) corresponds to a state where X refers to amount of water in Jug1 and Y refers to amount of water in Jug2 </li>
+	<li>Determine the path from initial state (xi, yi) to final state (xf, yf), where (xi, yi) is (0, 0) which indicates 
+	both Jugs are initially empty and (xf, yf) indicates a state which could be (0, d) or (d, 0).</li>
 </ul>
   </div>
-  
   <!-- simulation -->
   <div class="w3-container" id="simulation" style="margin-top:75px">
     <h1 style="font-size:30px; margin-top:30px;"><b>Simulation.</b></h1>
@@ -144,24 +144,24 @@ stack to another rod.</p><br>
          <div class="col-md-3" style="float:left">
             <div class="card mb-2">
                <img class="card-img-top"
-                  src="/images/Prolog-sub/puzzle.png" alt="Card image cap">
+                  src="/images/Prolog-sub/hanoi.jpg" alt="Card image cap">
                <div class="card-body">
-                  <h4 class="card-title">8 Puzzle</h4>
+                  <h4 class="card-title">Tower of Hanoi</h4>
                   <p class="card-text">
                   </p>
-                  <button type="button" class="button" onclick="location.href='{{route('prolog-sub.puzzle')}}'">Let's GO</button>
+                  <button type="button" class="button" onclick="location.href='{{route('prolog-sub.hanoi')}}'">Let's GO</button>
                </div>
             </div>
          </div>
          <div class="col-md-3" style="float:left">
             <div class="card mb-2">
                <img class="card-img-top"
-                  src="/images/Prolog-sub/list.png" alt="Card image cap">
+                  src="/images/Prolog-sub/puzzle.png" alt="Card image cap">
                <div class="card-body">
-                  <h4 class="card-title">List Basic</h4>
+                  <h4 class="card-title">8 Puzzle</h4>
                   <p class="card-text">
-                  </p>  
-                  <button type="button" class="button" onclick="location.href='{{route('prolog-sub.list')}}'">Let's GO</button>
+                  </p>
+                  <button type="button" class="button" onclick="location.href='{{route('prolog-sub.puzzle')}}'">Let's GO</button>
                </div>
             </div>
          </div>
@@ -181,6 +181,18 @@ stack to another rod.</p><br>
       <!--/.First slide-->
       <!--Second slide-->
       <div class="carousel-item">
+      <div class="col-md-3" style="float:left">
+            <div class="card mb-2">
+               <img class="card-img-top"
+                  src="/images/Prolog-sub/list.png" alt="Card image cap">
+               <div class="card-body">
+                  <h4 class="card-title">List Basic</h4>
+                  <p class="card-text">
+                  </p>  
+                  <button type="button" class="button" onclick="location.href='{{route('prolog-sub.list')}}'">Let's GO</button>
+               </div>
+            </div>
+         </div>
          <div class="col-md-3" style="float:left">
             <div class="card mb-2">
                <img class="card-img-top"
@@ -202,18 +214,6 @@ stack to another rod.</p><br>
                   <p class="card-text">
                   </p>
                   <button type="button" class="button" onclick="location.href='{{route('prolog-sub.tictactoe')}}'">Let's GO</button>
-               </div>
-            </div>
-         </div>
-         <div class="col-md-3" style="float:left">
-            <div class="card mb-2">
-               <img class="card-img-top"
-                  src="/images/Prolog-sub/waterjug.png" alt="Card image cap">
-               <div class="card-body">
-                  <h4 class="card-title">Water Jug</h4>
-                  <p class="card-text">
-                  </p>
-                  <button type="button" class="button" onclick="location.href='{{route('prolog-sub.waterjug')}}'">Let's GO</button>
                </div>
             </div>
          </div>
@@ -247,9 +247,6 @@ stack to another rod.</p><br>
 
 <!-- End page content -->
 </div>
-
-<!-- W3.CSS Container -->
-<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></p></div>
 
 <script>
 // Script to open and close sidebar

@@ -194,6 +194,30 @@ body {font-size:16px;}
                </div>
             </div>
          </div>
+         <div class="col-md-3" style="float:left">
+            <div class="card mb-2">
+               <img class="card-img-top"
+                  src="/images/Prolog-sub/tictac.png" alt="Card image cap">
+               <div class="card-body">
+                  <h4 class="card-title">Tic Tac Toe</h4>
+                  <p class="card-text">
+                  </p>
+                  <button type="button" class="button" onclick="location.href='{{route('prolog-sub.tictactoe')}}'">Let's GO</button>
+               </div>
+            </div>
+         </div>
+         <div class="col-md-3" style="float:left">
+            <div class="card mb-2">
+               <img class="card-img-top"
+                  src="/images/Prolog-sub/waterjug.png" alt="Card image cap">
+               <div class="card-body">
+                  <h4 class="card-title">Water Jug</h4>
+                  <p class="card-text">
+                  </p>
+                  <button type="button" class="button" onclick="location.href='{{route('prolog-sub.waterjug')}}'">Let's GO</button>
+               </div>
+            </div>
+         </div>
       </div>
       <!--/.Second slide-->
     </div>

@@ -58,27 +58,42 @@ body {font-size:16px;}
 
   <!-- Prolog -->
   <div class="w3-container" style="margin-top:40px" id="intro">
-    <h1 class="w3-xxxlarge" style="color:#CC0F0F"><b>List Basics</b></h1>
+    <h1 class="w3-xxxlarge" style="color:#CC0F0F"><b>8 Puzzle</b></h1>
     <h1 style="font-size:30px; margin-top:30px;"><b>Introduction.</b></h1>
     <hr style="width:50px;border:5px solid #A00202" class="w3-round">
     <b style="color:#CC0F0F">Problem Statement</b>
-<p>Find the last element of a list.</p><br>
-<img src="/images/monkey-banana/list.jpg"></img>
-<p>Lists in Prolog are themselves terms, and consist of a sequence of terms separated from one-another by commas and enclosed at each end by matching square brackets.</p>
+    <p>The 8 Puzzle Problem is a puzzle invented and popularized by Noyes Palmer Chapman in the 1870s.
+ The aim of the puzzle is to achieve a given configuration of tiles from a given (different) configuration by sliding the individual tiles around the grid as described below.</p><br>
+<img src="/images/monkey-banana/puzzle.jpg">
+<p>Instead of moving the tiles in the empty space, we can visualize moving the empty space 
+in place of the tile, basically swapping the tile with the empty space. The empty space can only move in four directions </p>
 <ul>
-	<li>The first element of a list is called the head of the list, and the remainder is called the tail of the list.</li>
-	<li>The last element of every non-empty list is the empty list.</li>
-	<li>Prolog provides a convenient notation that can be used to match against the head and tail of any list.<br>[ H | T ]</li>
-	<li>Where H will match against the head, and T against the tail.</li>
+	<li>Up</li>
+	<li>Down</li>
+	<li>Right</li>
+	<li>Left</li>
 </ul>
+<p>The empty space cannot move diagonally and move the empty space one position at a time.</p>
 
   <!-- procedure -->
   <div class="w3-container" id="procedure" style="margin-top:75px">
   <h1 style="font-size:30px; margin-top:30px;"><b>Procedure.</b></h1>
   <hr style="width:50px;border:5px solid #A00202" class="w3-round">
-  <p>To find the last element of a list:</p>
+  <p>The problem can be formulated with variables x1,x2,x3,x4,x5,x6,x7,x8 and y1,y2,y3,y4,y5,y6, y7,y8; 
+the xs represent the rows and ys the column. Now a solution for this problem is to assign values for x and for y such that the constraint is satisfied.</p>
 <ul>
-	<li>Example:<br>?- my_last(X,[a,b,c,d]).<br>X = d</li>
+	<li>To search for a solution, first select a search strategy. Next, there are some configuration options for the search process.</li>
+	<li>We can perform a depth-first search on state-space (Set of all configurations of a given problem i.e. all states that can be reached from the initial state) tree. </li>
+	<li>We can perform a Breadth-first search on the state space tree. </li>
+	<li>The search for an answer node can often be speeded by using an “intelligent” ranking function, also called an approximate cost function to avoid 
+	searching in sub-trees that do not contain an answer node.</li>
+	<li>We can assume that moving one tile in any direction will have a 1 unit cost. Keeping that in mind, we can define a cost function for the 8-puzzle algorithm.</li>
+</ul>
+<p>Note:</p>
+<ul>
+	<li> If we solve this problem with depth first search, then it will go to depth instead of exploring layer wise nodes.</li>
+	<li>N-puzzle that consists of N tiles (N+1 titles with an empty tile) where N can be 8, 15, 24 and so on.</li>
+	<li>if we have N = 15, 24 in this way, then they have Row and columns as follow (square root of (N+1) rows  and square root of (N+1) columns).</li>
 </ul>
   </div>
   <!-- simulation -->
@@ -171,6 +186,30 @@ body {font-size:16px;}
                   <p class="card-text">
                   </p>
                   <button type="button" class="button" onclick="location.href='{{route('prolog-sub.sudoku')}}'">Let's GO</button>
+               </div>
+            </div>
+         </div>
+         <div class="col-md-3" style="float:left">
+            <div class="card mb-2">
+               <img class="card-img-top"
+                  src="/images/Prolog-sub/tictac.png" alt="Card image cap">
+               <div class="card-body">
+                  <h4 class="card-title">Tic Tac Toe</h4>
+                  <p class="card-text">
+                  </p>
+                  <button type="button" class="button" onclick="location.href='{{route('prolog-sub.tictactoe')}}'">Let's GO</button>
+               </div>
+            </div>
+         </div>
+         <div class="col-md-3" style="float:left">
+            <div class="card mb-2">
+               <img class="card-img-top"
+                  src="/images/Prolog-sub/waterjug.png" alt="Card image cap">
+               <div class="card-body">
+                  <h4 class="card-title">Water Jug</h4>
+                  <p class="card-text">
+                  </p>
+                  <button type="button" class="button" onclick="location.href='{{route('prolog-sub.waterjug')}}'">Let's GO</button>
                </div>
             </div>
          </div>

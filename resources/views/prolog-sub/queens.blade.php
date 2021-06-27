@@ -58,26 +58,18 @@ body {font-size:16px;}
 
   <!-- Prolog -->
   <div class="w3-container" style="margin-top:40px" id="intro">
-    <h1 class="w3-xxxlarge" style="color:#CC0F0F"><b>Monkey Banana</b></h1>
+    <h1 class="w3-xxxlarge" style="color:#CC0F0F"><b>8 Queens</b></h1>
     <h1 style="font-size:30px; margin-top:30px;"><b>Introduction.</b></h1>
     <hr style="width:50px;border:5px solid #A00202" class="w3-round">
     <b  style="color:#CC0F0F">Problem Statement</b>
-<p>A monkey is in a room. A bunch of bananas is hanging from the ceiling. The monkey cannot 
-reach then bananas directly. There is a box in the corner of the room. How can the monkey 
-get the bananas?</p><br>
-
-<img src="/images/monkey-banana/monkey.jpg"></img>
+    <p>Eight queens problem is a constraint satisfaction problem. The task 
+is to place eight queens in the 64 available squares in such a way that no queen attacks each other.</p><br>
+<img src="/images/monkey-banana/queens.jpg" alt="8 queens image">
 <div class="space"></div>
-<b style="color:#CC0F0F">So how can the monkey get the bananas?</b>
-<p>So if the monkey is clever enough, he can come to the block, drag the block to the center, 
-climb on it, and get the banana. Below are few observations in this case-</p>
+<p>8 QUEENS place 8 queens on an 8 X 8 chessboard so that:</p>
 <ul>
-	<li>Monkey can reach the block, if both of them are at the same level. From the above 
-	image, we can see that both the monkey and the block are on the floor.</li>
-	<li>If the block position is not at the center, then monkey can drag it to the center.</li>
-	<li>If monkey and the block both are on the floor, and block is at the center, then the 
-	monkey can climb up on the block. So the vertical position of the monkey will be changed.</li>
-	<li>When the monkey is on the block, and block is at the center, then the monkey can get the bananas.</li>
+	<li>none of the queens is under attack. </li>
+	<li>No two queens share the same row, column or diagonal.</li>
 </ul>
 
   </div>
@@ -86,17 +78,18 @@ climb on it, and get the banana. Below are few observations in this case-</p>
   <div class="w3-container" id="procedure" style="margin-top:75px">
   <h1 style="font-size:30px; margin-top:30px;"><b>Procedure.</b></h1>
   <hr style="width:50px;border:5px solid #A00202" class="w3-round">
-  <p>We have some predicates that will move from one state to another state, by performing action.</p>
+  <p>The problem can be formulated with variables x1,x2,x3,x4,x5,x6,x7,x8 and y1,y2,y3,y4,y5,y6, y7,y8; 
+the xs represent the rows and ys the column. Now a solution for this problem is to assign values for x and for y such that the constraint is satisfied.</p>
 <ul>
-	<li>When the block is at the middle, and monkey is on top of the block, and monkey does not have 
-	the banana (i.e. has not state), then using the grasp action, it will change from has not state to have state.</li>
-	<li>From the floor, it can move to the top of the block (i.e. on top state), by performing the action climb.</li>
-	<li>The push or drag operation moves the block from one place to another.</li>
-	<li>Monkey can move from one place to another using walk or move clauses.</li>
+	<li>Each queen will be represented by X and Y (row and column)</li>
+	<li>We will “think” about this problem in terms of placing N queens not just 8. Recursive relation between N queens and (N – 1) queens</li>
+	<li>If the list of queens is not empty, then it can be written [X1:Y1 | Others] where X1:Y1 represents the first queen (head) and Others the other queens (tail)</li>
 </ul>
-<p>Another predicate will be canget(). Here we pass a state, so this will perform move predicate from one 
-state to another using different actions, then perform canget() on state 2. When we have reached to the 
-state ‘has>’, this indicates ‘has banana’. We will stop the execution.</p>
+<p>Note: <br>List of N queens</p>
+<ul>
+	<li>Base case: list of queens is empty</li>
+	<li>General case: list of queens looks like [X:Y | Others] </li>
+</ul>
   </div>
   
   <!-- simulation -->
@@ -189,6 +182,30 @@ state ‘has>’, this indicates ‘has banana’. We will stop the execution.</
                   <p class="card-text">
                   </p>
                   <button type="button" class="button" onclick="location.href='{{route('prolog-sub.sudoku')}}'">Let's GO</button>
+               </div>
+            </div>
+         </div>
+         <div class="col-md-3" style="float:left">
+            <div class="card mb-2">
+               <img class="card-img-top"
+                  src="/images/Prolog-sub/tictac.png" alt="Card image cap">
+               <div class="card-body">
+                  <h4 class="card-title">Tic Tac Toe</h4>
+                  <p class="card-text">
+                  </p>
+                  <button type="button" class="button" onclick="location.href='{{route('prolog-sub.tictactoe')}}'">Let's GO</button>
+               </div>
+            </div>
+         </div>
+         <div class="col-md-3" style="float:left">
+            <div class="card mb-2">
+               <img class="card-img-top"
+                  src="/images/Prolog-sub/waterjug.png" alt="Card image cap">
+               <div class="card-body">
+                  <h4 class="card-title">Water Jug</h4>
+                  <p class="card-text">
+                  </p>
+                  <button type="button" class="button" onclick="location.href='{{route('prolog-sub.waterjug')}}'">Let's GO</button>
                </div>
             </div>
          </div>

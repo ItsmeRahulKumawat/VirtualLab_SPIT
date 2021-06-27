@@ -37,6 +37,8 @@ Route::view('/prolog-sub/hanoi','prolog-sub/hanoi')->name('prolog-sub.hanoi');
 Route::view('/prolog-sub/sudoku','prolog-sub/sudoku')->name('prolog-sub.sudoku');
 Route::view('/prolog-sub/puzzle','prolog-sub/puzzle')->name('prolog-sub.puzzle');
 Route::view('/prolog-sub/queens','prolog-sub/queens')->name('prolog-sub.queens');
+Route::view('/prolog-sub/tictactoe','prolog-sub/tictactoe')->name('prolog-sub.tictactoe');
+Route::view('/prolog-sub/waterjug','prolog-sub/waterjug')->name('prolog-sub.waterjug');
 
 //mp-sub
 Route::view('/mp-sub/activate','mp-sub/activate')->name('mp-sub.activate');
