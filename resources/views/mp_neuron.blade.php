@@ -55,7 +55,7 @@ body {font-size:16px;}
 <!-- !PAGE CONTENT! -->
 <div class="w3-main" style="margin-left:250px;margin-right:50px">
 
-  <!-- Prolog -->
+  <!-- mp-neuron -->
   <div class="w3-container" style="margin-top:40px" id="intro">
     <h1 class="w3-xxxlarge" style="color:#CC0F0F"><b>MP NEURON</b></h1>
     <h1 style="font-size:30px; margin-top:30px;"><b>Introduction.</b></h1>
@@ -76,11 +76,12 @@ body {font-size:16px;}
 	it like the CPU (soma), passes the output through a cable like structure to other 
 	connected neurons (axon to synapse to other neuron’s dendrite). This is what is going 
 	on with a neuron in our brain — takes an input, processes it, throws out an output.</p>
-        <b style="color:#CC0F0F">McCulloch-Pitts Neuron</b>
+        <b style="color:#CC0F0F; font-size:25px">McCulloch-Pitts Neuron</b>
         <div class="space"></div>
 	<p>MP Neuron Model introduced by Warren McCulloch and Walter Pitts in 1943. 
 	MP neuron model is also known as linear threshold gate model.</p>
-	//mp neuron photo
+	<img src="/images/mp-sub/mainpage_circle.png" alt="image">
+  <div class="space"></div>
         <p>It may be divided into 2 parts. The first part, g takes an input (ahem dendrite ahem), 
 	performs an aggregation and based on the aggregated value the second part, f makes a decision.</p>
         <p>Lets suppose that I want to predict my own decision, whether to watch a random football game or 
