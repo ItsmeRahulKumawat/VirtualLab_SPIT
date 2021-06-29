@@ -228,7 +228,7 @@ body {font-size:16px;}
 
 <!-- End page content -->
 </div>
-
+<div class="footer_space"></div>
 <script>
 // Script to open and close sidebar
 function w3_open() {

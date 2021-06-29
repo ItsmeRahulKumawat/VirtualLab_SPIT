@@ -247,7 +247,7 @@ pump that can be used to fill the jugs with water. How can we get exactly 2 lite
 
 <!-- End page content -->
 </div>
-
+<div class="footer_space"></div>
 <script>
 // Script to open and close sidebar
 function w3_open() {

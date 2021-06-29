@@ -243,7 +243,7 @@ the xs represent the rows and ys the column. Now a solution for this problem is 
 
 <!-- End page content -->
 </div>
-
+<div class="footer_space"></div>
 <script>
 // Script to open and close sidebar
 function w3_open() {
