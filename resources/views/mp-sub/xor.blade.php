@@ -58,7 +58,7 @@ body {font-size:16px;}
 
   <!-- Prolog -->
   <div class="w3-container" style="margin-top:40px" id="intro">
-    <h1 class="w3-xxxlarge" style="color:#CC0F0F"><b>List Basics</b></h1>
+    <h1 class="w3-xxxlarge" style="color:#CC0F0F"><b>XOR</b></h1>
     <h1 style="font-size:30px; margin-top:30px;"><b>Introduction.</b></h1>
     <hr style="width:50px;border:5px solid #A00202" class="w3-round">
     <b style="color:#CC0F0F">Problem Statement</b>
@@ -78,7 +78,7 @@ body {font-size:16px;}
 
   <!-- Prolog experiment -->
   <div class="w3-container" id="prologExp" style="margin-top:75px">
-    <h1 style="font-size:30px; margin-top:30px;"><b>Prolog Problem Statements.</b></h1>
+    <h1 style="font-size:30px; margin-top:30px;"><b>Mp Neuron Problem Statements.</b></h1>
     <hr style="width:50px;border:5px solid #A00202" class="w3-round">
     <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
    <!--Controls-->

@@ -58,16 +58,43 @@ body {font-size:16px;}
 
   <!-- Prolog -->
   <div class="w3-container" style="margin-top:40px" id="intro">
-    <h1 class="w3-xxxlarge" style="color:#CC0F0F"><b>List Basics</b></h1>
+    <h1 class="w3-xxxlarge" style="color:#CC0F0F"><b>Alphabet Identification</b></h1>
     <h1 style="font-size:30px; margin-top:30px;"><b>Introduction.</b></h1>
     <hr style="width:50px;border:5px solid #A00202" class="w3-round">
-    <b style="color:#CC0F0F">Problem Statement</b>
+    <p>An input to a neural network usually consists of a collection of 1’s and 0’s arranged in
+an array. These arrays are called input vectors. The network is then trained to release
+the output patterns corresponding to these inputs. Each character is split into a number
+of segments (depending on the complexity of the alphabet involved) and each
+segment is handled by a set of purpose built neural network.</p>
+<div class="space"></div>
+<img src="/images/mp-sub/alphabet-sub/alpha.png" alt="image">
+<div class="space"></div>
+<div class="space"></div>
+<p>Backpropagation algorithm has played a large part in the resurgence of interest in artificial 
+neural networks. Backpropagation is a systematic method for training multilayer artificial neural networks (perceptrons)</p>
+
 
   <!-- procedure -->
   <div class="w3-container" id="procedure" style="margin-top:75px">
   <h1 style="font-size:30px; margin-top:30px;"><b>Procedure.</b></h1>
   <hr style="width:50px;border:5px solid #A00202" class="w3-round">
-
+  <ul>
+	<li>Select a training pair (next pair) from the training data set and apply the input
+	vector to the network input</li>
+	<li>Calculate the output of the network, i.e. to each neuron NET=ΣXiWi must be
+	calculated and then the activation function must be applied on the result (F(NET) </li>	
+	<li>Adjust weights of the output layer <br>∆Wqr,k = ηδr,k OUTqj <br>Wqr,k(n+1) = Wqr,k(n) + ∆Wqr,k</li>
+	<li>Adjust the weights of the hidden layer<br>∆Wqr,j = ηδqj OUTqj <br> Wqr,j(n+1) = Wqr,j(n) + ∆Wqr,j</li>
+</ul>
+<div class="space"></div>
+<b>Note:</b>
+<p>Processing Needed by the Recognition Algorithm</p>
+<ul>
+	<li>Segmentation of characters </li>
+	<li>Finding the Boundaries of Characters</li>
+	<li>Digitising Input Shapes</li>
+	<li>Isolating individual characters of a word and extracting consonant letters</li>
+</ul>
   </div>
   <!-- simulation -->
   <div class="w3-container" id="simulation" style="margin-top:75px">
@@ -78,7 +105,7 @@ body {font-size:16px;}
 
   <!-- Prolog experiment -->
   <div class="w3-container" id="prologExp" style="margin-top:75px">
-    <h1 style="font-size:30px; margin-top:30px;"><b>Prolog Problem Statements.</b></h1>
+    <h1 style="font-size:30px; margin-top:30px;"><b>Mp Neuron Problem Statements.</b></h1>
     <hr style="width:50px;border:5px solid #A00202" class="w3-round">
     <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
    <!--Controls-->

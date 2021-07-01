@@ -58,16 +58,51 @@ body {font-size:16px;}
 
   <!-- Prolog -->
   <div class="w3-container" style="margin-top:40px" id="intro">
-    <h1 class="w3-xxxlarge" style="color:#CC0F0F"><b>List Basics</b></h1>
+    <h1 class="w3-xxxlarge" style="color:#CC0F0F"><b>Activation Function</b></h1>
     <h1 style="font-size:30px; margin-top:30px;"><b>Introduction.</b></h1>
     <hr style="width:50px;border:5px solid #A00202" class="w3-round">
-    <b style="color:#CC0F0F">Problem Statement</b>
+        <p> Activation function decides, whether a neuron should be activated or not by calculating 
+    weighted sum and further adding bias with it. The purpose of the activation function is to introduce 
+    non-linearity into the output of a neuron.</p>
+    <div class="space"></div>
+    <img src="/images/mp-sub/activation-sub/first_mainpage.png" alt="">
+    <div class="space"></div>
+    <b style="color:#CC0F0F">Variants of activation function :</b>
+    <ul>
+      <li>Linear Function :equation similar to as of a straight line i.e. y = ax</li>
+      <li>Sigmoid Function :function which is plotted as ‘S’ shaped graph. Equation: A = 1/(1 + e-x)</li>
+      <li>Tanh Function :Tangent Hyperbolic function. Equation: f(x) = tanh(x) = 2/(1 + e-2x) - 1</li>
+      <li>RELU : Stands for Rectified linear unit.Equation : A(x) = max(0,x). </li>
+      <li>Softmax Function :Non-linear function to handle classification problems.</li>
+    </ul>
 
   <!-- procedure -->
   <div class="w3-container" id="procedure" style="margin-top:75px">
   <h1 style="font-size:30px; margin-top:30px;"><b>Procedure.</b></h1>
   <hr style="width:50px;border:5px solid #A00202" class="w3-round">
-
+  <p>Suppose we have a Neural net like this :</p>
+  <div class="space"></div>
+<img src="/images/mp-sub/activation-sub/mainpage.png" alt="image">
+<div class="space"></div>
+<p>Elements of the diagram :<br>z(1) = W(1)X + b(1)<br>a(1) = z(1)</p>
+<ul>
+	<li>z(1) is the vectorized output of layer 1</li>
+	<li>W(1) be the vectorized weights assigned to neurons
+	of hidden layer i.e. w1, w2, w3 and w4</li>
+	<li>X be the vectorized input features i.e. i1 and i2</li>
+	<li>b is the vectorized bias assigned to neurons in hidden
+	layer i.e. b1 and b2</li>
+	<li>a(1) is the vectorized form of any linear function.</li>
+</ul>
+<p>z(2) = W(2)a(1) + b(2)  
+a(2) = z(2) 
+// Putting value of z(1) here
+z(2) = (W(2) * [W(1)X + b(1)]) + b(2) 
+z(2) = [W(2) * W(1)] * X + [W(2)*b(1) + b(2)]
+Let, 
+    [W(2) * W(1)] = W
+    [W(2)*b(1) + b(2)] = b
+Final output : z(2) = W*X + b</p>
   </div>
   <!-- simulation -->
   <div class="w3-container" id="simulation" style="margin-top:75px">
@@ -78,7 +113,7 @@ body {font-size:16px;}
 
   <!-- Prolog experiment -->
   <div class="w3-container" id="prologExp" style="margin-top:75px">
-    <h1 style="font-size:30px; margin-top:30px;"><b>Prolog Problem Statements.</b></h1>
+    <h1 style="font-size:30px; margin-top:30px;"><b>Mp Neuron Problem Statements.</b></h1>
     <hr style="width:50px;border:5px solid #A00202" class="w3-round">
     <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
    <!--Controls-->

@@ -109,17 +109,22 @@ body {font-size:16px;}
     <hr style="width:50px;border:5px solid #A00202" class="w3-round">
     <div class="space"></div>
 <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
+
    <!--Controls-->
-   <div class="controls-top" align="center" style="margin-bottom: 20px;">
+   <!-- 
+    <div class="controls-top" align="center" style="margin-bottom: 20px;">
       <a class="btn-floating" href="#multi-item-example" data-slide="prev"><button class="arrow-left"><img class="icon_left" src="/images/arrow-left-solid.svg"></button></a>
       <a class="btn-floating" href="#multi-item-example" data-slide="next"><button class="arrow-right"><img class="icon_right" src="/images/arrow-right-solid.svg"></button></a>
    </div>
+    -->
    <!--/.Controls-->
    <!--Indicators-->
+   <!-- 
    <ol class="carousel-indicators">
       <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
       <li data-target="#multi-item-example" data-slide-to="1"></li>
    </ol>
+    -->
    <!--/.Indicators-->
    <!--Slides-->
 
