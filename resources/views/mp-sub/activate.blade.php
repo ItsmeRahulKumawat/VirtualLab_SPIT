@@ -35,7 +35,8 @@ body {font-size:16px;}
   <div class="w3-container">
     <h3 class="w3-padding-64"></h3>
   </div>
-  <div class="w3-bar-block" style="margin-top:30px;">
+  <div class="w3-bar-block" style="margin-top:-30px;">
+  <a href="/mp_neuron" onclick="w3_close(); confirmLeave()" class="w3-bar-item w3-button w3-hover-white">MP Neuron</a> 
     <a href="#intro" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Introduction</a> 
     <a href="#procedure" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Procedure</a> 
     <a href="#simulation" onclick="w3_close()" class=" w3-bar-item w3-button w3-hover-white">Simulation</a> 
