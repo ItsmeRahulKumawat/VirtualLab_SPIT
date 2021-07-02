@@ -94,60 +94,52 @@ body {font-size:16px;}
   </div>
 
   <div class="w3-container" id="prologExp" style="margin-top:75px">
-    <h1 style="font-size:30px; margin-top:30px;"><b>MpNeuron Problems.</b></h1>
+    <h1 style="font-size:30px; margin-top:30px;"><b>PNN Problems.</b></h1>
     <hr style="width:50px;border:5px solid #A00202" class="w3-round">
     <div class="space"></div>
 <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
    <!--Controls-->
+   <!-- 
    <div class="controls-top" align="center" style="margin-bottom: 20px;">
       <a class="btn-floating" href="#multi-item-example" data-slide="prev"><button class="arrow-left"><img class="icon_left" src="/images/arrow-left-solid.svg"></button></a>
       <a class="btn-floating" href="#multi-item-example" data-slide="next"><button class="arrow-right"><img class="icon_right" src="/images/arrow-right-solid.svg"></button></a>
    </div>
+    -->
    <!--/.Controls-->
    <!--Indicators-->
+   <!-- 
    <ol class="carousel-indicators">
       <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
       <li data-target="#multi-item-example" data-slide-to="1"></li>
    </ol>
+    -->
    <!--/.Indicators-->
    <!--Slides-->
 
    <div class="carousel-inner" role="listbox">
       <!--First slide-->
       <div class="carousel-item active">
-         <div class="col-md-3" style="float:left">
+      <div class="col-md-3" style="float:left">
             <div class="card mb-2">
                <img class="card-img-top"
-                  src="/images/mp-sub/activation.png" alt="Card image cap">
+                  src="/images/pnn-sub/c_section.png" alt="Card image cap">
                <div class="card-body">
-                  <h4 class="card-title">Activation Function</h4>
+                  <h4 class="card-title">C-Section Delivery Classification</h4>
                   <p class="card-text">
                   </p>
-                  <button type="button" class="button" onclick="location.href='{{route('mp-sub.activate')}}'">Let's GO</button>
+                  <button type="button" class="button" onclick="location.href='{{route('pnn-sub.c_section')}}'">Let's GO</button>
                </div>
             </div>
          </div>
          <div class="col-md-3" style="float:left">
             <div class="card mb-2">
                <img class="card-img-top"
-                  src="/images/mp-sub/xor.png" alt="Card image cap">
+                  src="/images/pnn-sub/stud_res.png" alt="Card image cap">
                <div class="card-body">
-                  <h4 class="card-title">XOR Gate</h4>
+                  <h4 class="card-title">Student Results</h4>
                   <p class="card-text">
                   </p>
-                  <button type="button" class="button" onclick="location.href='{{route('mp-sub.xor')}}'">Let's GO</button>
-               </div>
-            </div>
-         </div>
-         <div class="col-md-3" style="float:left">
-            <div class="card mb-2">
-               <img class="card-img-top"
-                  src="/images/mp-sub/alphabet.png" alt="Card image cap">
-               <div class="card-body">
-                  <h4 class="card-title">Alphabet Identification</h4>
-                  <p class="card-text">
-                  </p>
-                  <button type="button" class="button" onclick="location.href='{{route('mp-sub.alphabet')}}'">Let's GO</button>
+                  <button type="button" class="button" onclick="location.href='{{route('pnn-sub.stud_res')}}'">Let's GO</button>
                </div>
             </div>
          </div>
