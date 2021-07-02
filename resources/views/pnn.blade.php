@@ -57,39 +57,46 @@ body {font-size:16px;}
 
   <!-- pnn -->
   <div class="w3-container" style="margin-top:40px" id="intro">
-    <h1 class="w3-xxxlarge" style="color:#CC0F0F"><b>PNN(Porbabilistic Neural Network)</b></h1>
+    <h1 class="w3-xxxlarge" style="color:#CC0F0F"><b>PNN(Perceptron Neural Network)</b></h1>
     <h1 style="font-size:30px; margin-top:30px;"><b>Introduction.</b></h1>
     <hr style="width:50px;border:5px solid #A00202" class="w3-round">
 
-    <b style="color:#CC0F0F">Probabilistic neural networks</b>
+    <p>A perceptron is a neural network unit (an artificial neuron) that does certain computations to detect features or 
+	business intelligence in the input data.</p>
+  <div class="space"></div>
+  <img src="/images/pnn-sub/pnn1.png">
+  <div class="space"></div>
+
         <ul>
-        <li>Probabilistic neural network (PNN) is closely related to Parzen window pdf estimator.</li>
-	<li>(PNNs) offer a scalable alternative to the conventional back-propagation neural networks 
-	in classification problems without the need for massive forward and backward calculations that 
-	is associated with the ordinary neural networks.</li>
-	<li>. Then, using PDF of each class, the class probability of a new input data is estimated and 
-	Bayes’ rule is then employed to allocate the class with highest posterior probability to new input data. </li>
-	<li>A PNN consists of several sub-networks, each of which is a Parzen window pdf estimator for
-	each of the classes</li>
+        <li>Perceptron Learning Rule states that the algorithm would automatically learn the optimal weight coefficients.</li>
+	<li>The input features are then multiplied with these weights to determine if a neuron fires or not.</li>
+	<li>The Perceptron receives multiple input signals, and if the sum of the input signals exceeds a certain threshold, 
+	it either outputs a signal or does not return an output.</li>
+	<li>In the context of supervised learning and classification, this can then be used to predict the class of a sample.</li>
         </ul><br>
 
-        <b style="color:#CC0F0F">Layers</b><br>
+        <b  style="color:#CC0F0F">Perceptron Function</b><br>
+	<p>Perceptron is a function that maps its input “x,” which is multiplied with the learned weight 
+	coefficient; an output value ”f(x)”is generated.</p>
+  <div class="space"></div>
+  <img src="/images/pnn-sub/pnn2.png">
+  <div class="space"></div>
+
         <ul>
-        <li>The input nodes are the set of measurements.</li>
-	<li>The second layer consists of the Gaussian functions formed using the given set of data points as centers.</li>
-	<li>The third layer performs an average operation of the outputs from the second layer for each class.</li>
-	<li>The fourth layer performs a vote, selecting the largest value. The associated class label is then determined.</li>
-        </ul><br>
-	<img src="/images/pnn-sub/formula.png" alt="">
-    <div class="space"></div>
-        <b style="color:#CC0F0F">Notes :</b><br>
+        <li>“w” = vector of real-valued weights</li>	
+	<li>“b” = bias (an element that adjusts the boundary away from origin without any dependence on the input value)</li>
+	<li>“x” = vector of input x values</li>
+  <li>“x” = vector of input x values</li>
+	<li>m” = number of inputs to the Perceptron</li>
+        </ul>
+
+        <b  style="color:#CC0F0F">Characteristics :</b><br>
         <ul>
-        <li>They can work with smaller sets of training data. However, this advantage may come at a cost of 
-	requiring large amounts of memory as the training data get larger. </li>
-	<li>PNNs can be more accurate but slower than multilayer perceptron networks at classifying new cases.</li>
-	<li>PNN networks are relatively insensitive to outliers.</li>
-	<li>PNN networks generate accurate predicted target probability scores.</li>
-        </ul><br>
+        <li>Optimal weight coefficients are automatically learned.</li>
+	<li>Types of activation functions include the sign, step, and sigmoid functions.</li>
+	<li>Activation function applies a step rule to check if the output of the weighting function is greater than zero.</li>
+	<li>If the sum of the input signals exceeds a certain threshold, it outputs a signal; otherwise, there is no output.</li>
+        </ul>
 	
   </div>
 
