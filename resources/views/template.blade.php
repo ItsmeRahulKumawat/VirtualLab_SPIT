@@ -29,6 +29,7 @@
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
       <title>SPIT R & D</title>
       <script src="https://research.spit.ac.in/js/app.js" defer></script>
+      <script type="text/javascript" src="/js/main.js"></script>
    </head>
    <body>
       <div id="wrapper" class="home-page">
