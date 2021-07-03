@@ -121,27 +121,15 @@ body {font-size:16px;}
       <div class="col-md-3" style="float:left">
                 <div class="card mb-2">
                     <img class="card-img-top"
-                        src="/images/bnn-sub/covid.png" alt="Card image cap">
+                        src="/images/cnn-sub/face.png" alt="Card image cap">
                     <div class="card-body">
-                        <h4 class="card-title">Covid Prediction</h4>
+                        <h4 class="card-title">Face Recognition</h4>
                         <p class="card-text">
                         </p>
-                        <button type="button" class="button" onclick="location.href='{{route('bnn-sub.covid_pred')}}'">Let's GO</button>
+                        <button type="button" class="button" onclick="location.href='{{route('cnn-sub.face_recog')}}'">Let's GO</button>
                     </div>
                 </div>
-                </div>
-                <div class="col-md-3" style="float:left">
-                <div class="card mb-2">
-                    <img class="card-img-top"
-                        src="/images/bnn-sub/yahoo.png" alt="Card image cap">
-                    <div class="card-body">
-                        <h4 class="card-title">Yahoo Stock Pred</h4>
-                        <p class="card-text">
-                        </p>
-                        <button type="button" class="button" onclick="location.href='{{route('bnn-sub.yahoo_stock')}}'">Let's GO</button>
-                    </div>
-                </div>
-                </div>
+            </div>
       </div>
       <!--/.First slide-->
       <!--Second slide-->
