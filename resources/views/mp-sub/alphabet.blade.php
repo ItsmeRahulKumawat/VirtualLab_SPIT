@@ -96,11 +96,9 @@
             <div class="w3-container" id="simulation" style="margin-top:75px">
                <h1 style="font-size:30px; margin-top:30px;"><b>Simulation.</b></h1>
                <hr style="width:50px;border:5px solid #A00202" class="w3-round">
-               <div data-pym-src=
-                  "https://www.jdoodle.com/iembed/v0/f37">
+               <div data-pym-src="https://www.jdoodle.com/iembed/v0/f37">
                </div>
-               <script src=
-                  "https://www.jdoodle.com/assets/jdoodle-pym.min.js"
+               <script src="https://www.jdoodle.com/assets/jdoodle-pym.min.js"
                   type="text/javascript"></script>
             </div>
          </div>
