@@ -26,7 +26,7 @@
    </style>
    <body>
       <!-- Sidebar/menu -->
-      <nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:290px;font-weight:bold;" id="mySidebar">
+      <nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:270px;font-weight:bold;" id="mySidebar">
          <br>
          <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
          <div class="w3-container">
@@ -97,7 +97,6 @@
                <script src="https://www.jdoodle.com/assets/jdoodle-pym.min.js"
                   type="text/javascript"></script>
             </div>
-         </div>
          <!-- Prolog experiment -->
          <div class="w3-container" id="prologExp" style="margin-top:75px">
             <h1 style="font-size:30px; margin-top:30px;"><b>BNN Problem Statements.</b></h1>
