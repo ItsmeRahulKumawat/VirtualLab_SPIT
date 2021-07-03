@@ -55,13 +55,36 @@
             <h1 class="w3-xxxlarge" style="color:#CC0F0F"><b>Face Recognition with Google Collab</b></h1>
             <h1 style="font-size:30px; margin-top:30px;"><b>Introduction.</b></h1>
             <hr style="width:50px;border:5px solid #A00202" class="w3-round">
-            
+            <p>Google Colab is a browser-based Jupyter notebook service that’s available for free. This service is 
+                fit for Deep Learning and Machine Learning applications. </p>
+                <div class="space"></div>
+                <img src="/images/cnn-sub/face_recog/mainpage.png">
+                <div class="space"></div>
+                <p>We trained the model with several images and then used the test images to see how the results match up. We trained the model through 
+                epochs. In this model, we have taken epochs as 100. Once the threshold is achieved by the model and if we further try to train our model, 
+                then it will provide unexpected results and its accuracy will also decrease. After that, increasing the epoch would also not help. Hence, epochs 
+                play a very important role in deciding the accuracy of the model, and its value can be decided through trial and error.</p>
             </div>
             <!-- procedure -->
             <div class="w3-container" id="procedure" style="margin-top:75px">
                <h1 style="font-size:30px; margin-top:30px;"><b>Procedure.</b></h1>
                <hr style="width:50px;border:5px solid #A00202" class="w3-round">
-               
+               <p>The classic use of CNN is to perform image classification. There are different 
+                    parameters that need to be considered for building this model.</p>
+                    <ul>
+                        <li>Keras ImageDataGenerator augments the images in real-time while the model is still training. Any random 
+                        transformation can be applied to each training image as it is passed to the model.</li>
+                        <li>Different Activation functions are used, such as Rectified Linear Unit (ReLU) and Softmax functions.</li>
+                        <li>Pooling layers are used to reduce the number of parameters when the images are too large. Downsampling 
+                        reduces the dimensionality of each map but it retains the important features.</li>
+                        <li>Max Pooling takes the largest element from the rectified feature map and downsamples it.</li>
+                        <li>Dropout is a simple and powerful regularization technique for neural networks and deep learning models. 
+                        A good value for dropout in a hidden layer is between 0.5 and 0.8. Input layers use a larger dropout rate, such as 0.8.</li>
+                        <li>Dense is the only actual network layer in the model. It feeds all outputs from the previous layer to all its 
+                        neurons, each neuron providing one output to the next layer. </li>
+                        <li>The number of epoch will decide- how many times we will change the weights of the network.</li>
+                    </ul>
+                    <p></p>
             </div>
             <!-- simulation -->
             <div class="w3-container" id="simulation" style="margin-top:75px">
