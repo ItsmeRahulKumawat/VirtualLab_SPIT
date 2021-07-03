@@ -127,18 +127,6 @@
                      <div class="col-md-3" style="float:left">
                         <div class="card mb-2">
                            <img class="card-img-top"
-                              src="/images/bnn-sub/covid.png" alt="Card image cap">
-                           <div class="card-body">
-                              <h4 class="card-title">Covid Prediction</h4>
-                              <p class="card-text">
-                              </p>
-                              <button type="button" class="button" onclick="location.href='{{route('bnn-sub.covid_pred')}}'">Let's GO</button>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-md-3" style="float:left">
-                        <div class="card mb-2">
-                           <img class="card-img-top"
                               src="/images/bnn-sub/yahoo.png" alt="Card image cap">
                            <div class="card-body">
                               <h4 class="card-title">Yahoo Stock Pred</h4>
