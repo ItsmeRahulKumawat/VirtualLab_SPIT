@@ -33,7 +33,7 @@
             <h3 class="w3-padding-64"></h3>
          </div>
          <div class="w3-bar-block" style="margin-top:-30px;">
-            <a style="color:black" onclick="w3_close(); confirmLeave('mp')" class="w3-bar-item w3-button w3-hover-white">BNN Neuron</a>
+            <a style="color:black" onclick="w3_close(); confirmLeave('bnn')" class="w3-bar-item w3-button w3-hover-white">BNN Neuron</a>
             <a href="#intro" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Introduction</a> 
             <a href="#procedure" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Procedure</a> 
             <a href="#simulation" onclick="w3_close()" class=" w3-bar-item w3-button w3-hover-white">Simulation</a> 
