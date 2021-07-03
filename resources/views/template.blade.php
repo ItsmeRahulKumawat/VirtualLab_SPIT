@@ -63,6 +63,9 @@
                               <a href="/homepage/#expList">All Experiments</a>
                            </div>
                         </div>
+                        <li class="nav-item" id="about_us">
+                           <a class="nav-link" href="/about_us">About Us</a>
+                        </li>
                         </li>
                      </ul>
                   </div>

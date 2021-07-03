@@ -18,6 +18,7 @@ Route::get('/', function () {
 });
 
 Route::view('/homepage','homepage')->name('homepage');
+Route::view('/about_us','about_us')->name('about_us');
 Route::view('/prolog','prolog')->name('prolog');
 Route::view('/mp_neuron','mp_neuron')->name('mp_neuron');
 Route::view('/pnn','pnn')->name('pnn');
