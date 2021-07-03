@@ -61,7 +61,7 @@
                 For this purpose, prediction models can help not only allocating medical resources but also raising the 
                 preparedness of healthcare systems involved.</p>
                 <div class="space"></div>
-                //Add image
+                <img src="/images/bnn-sub/covid_pred/mainpage.png">
                 <div class="space"></div>
                 <p>Firstly it was suggexted to use multi-gen genetic programming, which is one of AI models, to develop 
                 mathematical models with the exponential function for predicting the COVID-19 pandemic</p>
@@ -100,7 +100,7 @@
          </div>
          <!-- Prolog experiment -->
          <div class="w3-container" id="prologExp" style="margin-top:75px">
-            <h1 style="font-size:30px; margin-top:30px;"><b>Mp Neuron Problem Statements.</b></h1>
+            <h1 style="font-size:30px; margin-top:30px;"><b>BNN Problem Statements.</b></h1>
             <hr style="width:50px;border:5px solid #A00202" class="w3-round">
             <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
                <!--Controls-->
@@ -127,24 +127,24 @@
                      <div class="col-md-3" style="float:left">
                         <div class="card mb-2">
                            <img class="card-img-top"
-                              src="/images/mp-sub/activation.png" alt="Card image cap">
+                              src="/images/bnn-sub/covid.png" alt="Card image cap">
                            <div class="card-body">
-                              <h4 class="card-title">Activation Function</h4>
+                              <h4 class="card-title">Covid Prediction</h4>
                               <p class="card-text">
                               </p>
-                              <button type="button" class="button" onclick="location.href='{{route('mp-sub.activate')}}'">Let's GO</button>
+                              <button type="button" class="button" onclick="location.href='{{route('bnn-sub.covid_pred')}}'">Let's GO</button>
                            </div>
                         </div>
                      </div>
                      <div class="col-md-3" style="float:left">
                         <div class="card mb-2">
                            <img class="card-img-top"
-                              src="/images/mp-sub/xor.png" alt="Card image cap">
+                              src="/images/bnn-sub/yahoo.png" alt="Card image cap">
                            <div class="card-body">
-                              <h4 class="card-title">XOR Gate</h4>
+                              <h4 class="card-title">Yahoo Stock Pred</h4>
                               <p class="card-text">
                               </p>
-                              <button type="button" class="button" onclick="location.href='{{route('mp-sub.xor')}}'">Let's GO</button>
+                              <button type="button" class="button" onclick="location.href='{{route('bnn-sub.yahoo_stock')}}'">Let's GO</button>
                            </div>
                         </div>
                      </div>
