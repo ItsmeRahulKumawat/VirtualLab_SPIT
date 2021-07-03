@@ -37,7 +37,7 @@ body {font-size:16px;}
   </div>
   <div class="w3-bar-block" style="margin-top:30px;">
     <a href="#intro" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Introduction</a> 
-    <a href="#prologExp" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">PNN Problems</a> 
+    <a href="#prologExp" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">BNN Problems</a> 
     <a href="#assignment" onclick="w3_close()" class=" w3-bar-item w3-button w3-hover-white">Assignment</a> 
     <a href="#feedback" onclick="w3_close()" class=" w3-bar-item w3-button w3-hover-white">Feedback</a>
   </div>
@@ -55,53 +55,39 @@ body {font-size:16px;}
 <!-- !PAGE CONTENT! -->
 <div class="w3-main" style="margin-left:250px;margin-right:50px">
 
-  <!-- pnn -->
+  <!-- bnn -->
   <div class="w3-container" style="margin-top:40px" id="intro">
-    <h1 class="w3-xxxlarge" style="color:#CC0F0F"><b>PNN(Perceptron Neural Network)</b></h1>
+    <h1 class="w3-xxxlarge" style="color:#CC0F0F"><b>BNN(Biological Neural Network)</b></h1>
     <h1 style="font-size:30px; margin-top:30px;"><b>Introduction.</b></h1>
     <hr style="width:50px;border:5px solid #A00202" class="w3-round">
-
-    <p>A perceptron is a neural network unit (an artificial neuron) that does certain computations to detect features or 
-	business intelligence in the input data.</p>
-  <div class="space"></div>
-  <img src="/images/pnn-sub/pnn1.png">
-  <div class="space"></div>
-
-        <ul>
-        <li>Perceptron Learning Rule states that the algorithm would automatically learn the optimal weight coefficients.</li>
-	<li>The input features are then multiplied with these weights to determine if a neuron fires or not.</li>
-	<li>The Perceptron receives multiple input signals, and if the sum of the input signals exceeds a certain threshold, 
-	it either outputs a signal or does not return an output.</li>
-	<li>In the context of supervised learning and classification, this can then be used to predict the class of a sample.</li>
-        </ul><br>
-
-        <b  style="color:#CC0F0F">Perceptron Function</b><br>
-	<p>Perceptron is a function that maps its input “x,” which is multiplied with the learned weight 
-	coefficient; an output value ”f(x)”is generated.</p>
-  <div class="space"></div>
-  <img src="/images/pnn-sub/pnn2.png">
-  <div class="space"></div>
-
-        <ul>
-        <li>“w” = vector of real-valued weights</li>	
-	<li>“b” = bias (an element that adjusts the boundary away from origin without any dependence on the input value)</li>
-	<li>“x” = vector of input x values</li>
-  <li>“x” = vector of input x values</li>
-	<li>m” = number of inputs to the Perceptron</li>
-        </ul>
-
-        <b  style="color:#CC0F0F">Characteristics :</b><br>
-        <ul>
-        <li>Optimal weight coefficients are automatically learned.</li>
-	<li>Types of activation functions include the sign, step, and sigmoid functions.</li>
-	<li>Activation function applies a step rule to check if the output of the weighting function is greater than zero.</li>
-	<li>If the sum of the input signals exceeds a certain threshold, it outputs a signal; otherwise, there is no output.</li>
-        </ul>
-	
+    <p>A biological neural network is composed of a groups of chemically connected or functionally associated neurons. A single neuron may be connected to many 
+other neurons and the total number of neurons and connections in a network may be extensive. Connections, called synapses, are usually formed from axons to 
+dendrites, though dendrodendritic synapses and other connections are possible. Apart from the electrical signaling, there are other forms of signaling that 
+arise from neurotransmitter diffusion.</p>
+<div class="space"></div>
+<img src="/images/bnn-sub/bnn1.png">
+<div class="space"></div>
+<ul>
+<li>The majority of neurons encode their activations or outputs as a series of brief
+electrical pulses (i.e. spikes or action potentials).</li>
+<li>The neuron’s cell body (soma) processes the incoming activations and converts
+them into output activations.</li>
+<li>The neuron’s nucleus contains the genetic material in the form of DNA. This is
+the same as in most types of cells, not just neurons.</li>
+<li>Dendrites are fibres which emanate from the cell body and provide the receptive
+zones that receive activation from other neurons.</li>
+<li>Axons are fibres acting as transmission lines that send activation to other neurons.</li>
+<li>The junctions that allow signal transmission between the axons and dendrites are
+called synapses. The process of transmission is by diffusion of chemicals called
+neurotransmitters across the synaptic cleft.</li>
+</ul>
+<p>Biological neural networks tolerate a great deal of ambiguity in data and they are fault-tolerant to a certain level, and the 
+minor failures will not always result in memory loss. Artificial neural networks were inspired by the biological neural networks 
+of the human body. The modeling of biological neural networks was a crucial step in the development of artificial neural networks.</p>
   </div>
 
   <div class="w3-container" id="prologExp" style="margin-top:75px">
-    <h1 style="font-size:30px; margin-top:30px;"><b>PNN Problems.</b></h1>
+    <h1 style="font-size:30px; margin-top:30px;"><b>BNN Problems.</b></h1>
     <hr style="width:50px;border:5px solid #A00202" class="w3-round">
     <div class="space"></div>
 <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
