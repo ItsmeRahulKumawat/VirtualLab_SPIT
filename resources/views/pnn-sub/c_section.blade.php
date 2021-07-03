@@ -101,7 +101,7 @@ normal vaginal deliveries using foetal heart rate signals.</p>
     <h1 style="font-size:30px; margin-top:30px;"><b>Simulation.</b></h1>
     <hr style="width:50px;border:5px solid #A00202" class="w3-round">
     <div data-pym-src=
-"https://www.jdoodle.com/embed/v0/2IhG?stdin=1&arg=0">
+"https://www.jdoodle.com/iembed/v0/f37">
     </div>
     <script src=
 "https://www.jdoodle.com/assets/jdoodle-pym.min.js"
