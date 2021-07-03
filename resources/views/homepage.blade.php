@@ -107,7 +107,7 @@ laboratories are a great way for learners to practice in a safe, online environm
                   src="/images/bnn.png" alt="Card image cap">
                <div class="card-body">
                   <h4 class="card-title">BNN NEURON</h4>
-                  <p class="card-text">Binarized Neural Network (BNN) is also a neural network which consists of binary weights and activations.
+                  <p class="card-text">A biological neural network is composed of a groups of chemically connected or functionally associated neurons.
                   </p>
                   <button type="button" class="button" onclick="location.href='/bnn'">Let's GO</button>
                </div>
@@ -147,7 +147,7 @@ laboratories are a great way for learners to practice in a safe, online environm
                   src="/images/pnn_neuron.png" alt="Card image cap">
                <div class="card-body">
                   <h4 class="card-title">PNN NEURON</h4>
-                  <p class="card-text">A probabilistic neural network is a feedforward neural network, which is widely used in pattern recognition problems.
+                  <p class="card-text">In the context of neural networks, a perceptron is an artificial neuron using the Heaviside step function as the activation function.
                   </p>
                   <button type="button" class="button" onclick="location.href='/pnn'">Let's GO</button>
                </div>
