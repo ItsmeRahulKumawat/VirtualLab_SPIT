@@ -16,6 +16,16 @@ body {
   margin-bottom: 100px;
 }
 
+.shade {
+  position: absolute;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background-color:#ffffff;
+  opacity: 0.4
+}
+
 .heading {
   font-size: 60px;
   color: #CC0F0F;
@@ -47,6 +57,7 @@ body {
 .profile:hover .profile-img {
   height:260px ;
   width:260px ;
+  
 }
 
 .user-name {

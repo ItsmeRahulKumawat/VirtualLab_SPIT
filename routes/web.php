@@ -68,8 +68,8 @@ Route::view('/demorgan-sub/all_laws','demorgan-sub/all_laws')->name('demorgan-su
 Route::view('/demorgan-sub/maxmin_comp','demorgan-sub/maxmin_comp')->name('demorgan-sub.maxmin_comp');
 Route::view('/demorgan-sub/maxprod_comp','demorgan-sub/maxprod_comp')->name('demorgan-sub.maxprod_comp');
 
-//fuzzysets-sub
-Route::view('/fuzzysets-sub/fuzzy_opertaions','fuzzysets-sub/fuzzy_opertaions')->name('fuzzysets-sub.fuzzy_opertaions');
+//fuzzyset-sub
+Route::view('/fuzzysets-sub/fuzzy','fuzzysets-sub/fuzzy')->name('fuzzyset-sub.fuzzy');
 
 
 
