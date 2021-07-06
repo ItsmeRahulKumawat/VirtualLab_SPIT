@@ -16,14 +16,14 @@
         <div class="col-md-4 col-sm-6">
             <div class="our-team">
                 <div class="pic">
-                    <img src="/images/about_us/img3.jpg">
+                    <img src="/images/about_us/arti.jpeg">
                 </div>
                 <h3 class="title">Dr.Aarti Karande</h3>
                 <span class="post">Project Manager</span>
                 <ul class="social">
-                <li><a href="" target="_blank" class="fab fa-github"></a></li>
-                    <li><a href="" target="_blank" class="fa fa-envelope"></a></li>
-                    <li><a href="" target="_blank" class="fab fa-linkedin"></a></li>
+                <li><a href="https://aartimkarande.in/" target="_blank" class="fa fa-user"></a></li>
+                    <li><a href="aartikarande@spit.ac.in" target="_blank" class="fa fa-envelope"></a></li>
+                    <li><a href="https://www.linkedin.com/in/aartimkarande/" target="_blank" class="fab fa-linkedin"></a></li>
                 </ul>
             </div>
         </div>
@@ -44,7 +44,7 @@
         <div class="col-md-4 col-sm-6">
             <div class="our-team">
                 <div class="pic">
-                    <img src="/images/about_us/img2.jpg">
+                    <img src="/images/about_us/rutika.jpg">
                 </div>
                 <h3 class="title">Rutika Sonawane</h3>
                 <span class="post">Web Developer</span>
