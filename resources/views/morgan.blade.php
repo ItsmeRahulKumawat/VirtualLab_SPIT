@@ -115,36 +115,36 @@ body {font-size:16px;}
          <div class="col-md-3" style="float:left">
             <div class="card mb-2">
                <img class="card-img-top"
-                  src="/images/mp-sub/activation.png" alt="Card image cap">
+                  src="/images/morgan-sub/all-law.png" alt="Card image cap">
                <div class="card-body">
-                  <h4 class="card-title">Activation Function</h4>
+                  <h4 class="card-title">All Law</h4>
                   <p class="card-text">
                   </p>
-                  <button type="button" class="button" onclick="location.href='{{route('mp-sub.activate')}}'">Let's GO</button>
+                  <button type="button" class="button" onclick="location.href='{{route('demorgan-sub.all_laws')}}'">Let's GO</button>
                </div>
             </div>
          </div>
          <div class="col-md-3" style="float:left">
             <div class="card mb-2">
                <img class="card-img-top"
-                  src="/images/mp-sub/xor.png" alt="Card image cap">
+                  src="/images/morgan-sub/max-min.png" alt="Card image cap">
                <div class="card-body">
-                  <h4 class="card-title">XOR Gate</h4>
+                  <h4 class="card-title">Max-Min Composition</h4>
                   <p class="card-text">
                   </p>
-                  <button type="button" class="button" onclick="location.href='{{route('mp-sub.xor')}}'">Let's GO</button>
+                  <button type="button" class="button" onclick="location.href='{{route('demorgan-sub.maxmin_comp')}}'">Let's GO</button>
                </div>
             </div>
          </div>
          <div class="col-md-3" style="float:left">
             <div class="card mb-2">
                <img class="card-img-top"
-                  src="/images/mp-sub/alphabet.png" alt="Card image cap">
+                  src="/images/morgan-sub/max-prod.png" alt="Card image cap">
                <div class="card-body">
-                  <h4 class="card-title">Alphabet Identification</h4>
+                  <h4 class="card-title">Max Product Comp</h4>
                   <p class="card-text">
                   </p>
-                  <button type="button" class="button" onclick="location.href='{{route('mp-sub.alphabet')}}'">Let's GO</button>
+                  <button type="button" class="button" onclick="location.href='{{route('demorgan-sub.maxprod_comp')}}'">Let's GO</button>
                </div>
             </div>
          </div>
