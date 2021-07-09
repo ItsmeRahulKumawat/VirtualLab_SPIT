@@ -147,18 +147,6 @@
                         <div class="col-md-3" style="float:left">
                             <div class="card mb-2">
                             <img class="card-img-top"
-                                src="/images/morgan-sub/max-min.png" alt="Card image cap">
-                            <div class="card-body">
-                                <h4 class="card-title">Max-Min Composition</h4>
-                                <p class="card-text">
-                                </p>
-                                <button type="button" class="button" onclick="location.href='{{route('demorgan-sub.maxmin_comp')}}'">Let's GO</button>
-                            </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3" style="float:left">
-                            <div class="card mb-2">
-                            <img class="card-img-top"
                                 src="/images/morgan-sub/max-prod.png" alt="Card image cap">
                             <div class="card-body">
                                 <h4 class="card-title">Max Product Comp</h4>
