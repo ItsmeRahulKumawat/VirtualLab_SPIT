@@ -37,7 +37,7 @@ body {font-size:16px;}
   </div>
   <div class="w3-bar-block" style="margin-top:30px;">
     <a href="#intro" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Introduction</a> 
-    <a href="#prologExp" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Fuzzy Cont Problems</a> 
+    <!-- <a href="#prologExp" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Fuzzy Cont Problems</a>  -->
     <a href="#assignment" onclick="w3_close()" class=" w3-bar-item w3-button w3-hover-white">Assignment</a> 
     <a href="#feedback" onclick="w3_close()" class=" w3-bar-item w3-button w3-hover-white">Feedback</a>
   </div>
@@ -71,15 +71,15 @@ body {font-size:16px;}
             <li>The fuzzy control rules, basically the IF-THEN rules, can be best utilized in designing a controller.</li>
         </ul>
         <div class="space"></div>
-
+            <img src="/images/fuzzy_cont-sub/mainpage.jpg" alt="">
         <div class="space"></div>
-        ////https://www.tutorialspoint.com/fuzzy_logic/images/fuzzy_logic_control_architecture.jpg
         <p>Fuzzy logic controllers are based on fuzzy sets, that is, classes of objects in which the transition from 
         membership to nonmembership is smooth rather than abrupt. The output of the systems has linguistic relations 
         with the inputs of the system. These relations are called rules and the output of each rule is a fuzzy set. 
         More than one rule is used to increase conversion efficiency. </p>
 
-        <p style="color:#cc0f0f">Advantages of Fuzzy Logic Control</p>
+        <b style="color:#cc0f0f">Advantages of Fuzzy Logic Control</b>
+        <div class="space"></div>
         <ul>
             <li>Developing a FLC is comparatively cheaper than developing model based or other controller in terms of performance.</li>
             <li>FLCs are more robust than PID controllers because of their capability to cover a huge range of operating conditions.</li>
@@ -90,11 +90,11 @@ body {font-size:16px;}
 
   </div>
 
-  <div class="w3-container" id="prologExp" style="margin-top:75px">
+  <!-- <div class="w3-container" id="prologExp" style="margin-top:75px">
     <h1 style="font-size:30px; margin-top:30px;"><b>Fuzzy Controller Problems.</b></h1>
     <hr style="width:50px;border:5px solid #A00202" class="w3-round">
     <div class="space"></div>
-<div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
+<div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel"> -->
 
    <!--Controls-->
    <!-- 
@@ -114,15 +114,15 @@ body {font-size:16px;}
    <!--/.Indicators-->
    <!--Slides-->
 
-   <div class="carousel-inner" role="listbox">
-      <!--First slide-->
+   <!-- <div class="carousel-inner" role="listbox">
+      First slide
       <div class="carousel-item active">
          <div class="col-md-3" style="float:left">
             <div class="card mb-2">
                <img class="card-img-top"
                   src="/images/mp-sub/activation.png" alt="Card image cap">
                <div class="card-body">
-                  <h4 class="card-title">Activation Function</h4>
+                  <h4 class="card-title">All Laws</h4>
                   <p class="card-text">
                   </p>
                   <button type="button" class="button" onclick="location.href='{{route('mp-sub.activate')}}'">Let's GO</button>
@@ -134,7 +134,7 @@ body {font-size:16px;}
                <img class="card-img-top"
                   src="/images/mp-sub/xor.png" alt="Card image cap">
                <div class="card-body">
-                  <h4 class="card-title">XOR Gate</h4>
+                  <h4 class="card-title">Max-Min Composition</h4>
                   <p class="card-text">
                   </p>
                   <button type="button" class="button" onclick="location.href='{{route('mp-sub.xor')}}'">Let's GO</button>
@@ -146,20 +146,20 @@ body {font-size:16px;}
                <img class="card-img-top"
                   src="/images/mp-sub/alphabet.png" alt="Card image cap">
                <div class="card-body">
-                  <h4 class="card-title">Alphabet Identification</h4>
+                  <h4 class="card-title">Max Product Comp</h4>
                   <p class="card-text">
                   </p>
                   <button type="button" class="button" onclick="location.href='{{route('mp-sub.alphabet')}}'">Let's GO</button>
                </div>
             </div>
          </div>
-      </div>
+      </div> -->
       <!--/.First slide-->
       <!--Second slide-->
       <!-- WE can add here more problems in future if we needed to and just we have to make the main div which is there is in first slider exactly and then just copy paste the blocks of cards and sliders are automatically given if we add somthing in second or third it will slide according to that -->
       <!--/.Second slide-->
-    </div>
-  </div>
+    <!-- </div> -->
+  <!-- </div> -->
 
   <!-- Assignment -->
   <div class="w3-container" id="assignment" style="margin-top:75px">
