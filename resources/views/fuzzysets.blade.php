@@ -95,7 +95,7 @@ body {font-size:16px;}
   </div>
 
   <div class="w3-container" id="prologExp" style="margin-top:75px">
-    <h1 style="font-size:30px; margin-top:30px;"><b>Fuzzy Sets Problems.</b></h1>
+    <h1 style="font-size:30px; margin-top:30px;"><b>Fuzzy Sets Problems</b></h1>
     <hr style="width:50px;border:5px solid #A00202" class="w3-round">
     <div class="space"></div>
 <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
