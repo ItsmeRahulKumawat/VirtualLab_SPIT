@@ -113,12 +113,12 @@ body {font-size:16px;}
       <div class="col-md-3" style="float:left">
                 <div class="card mb-2">
                     <img class="card-img-top"
-                        src="/images/fuzzysets-sub/fuzzyoperations/fuzzy.png" alt="Card image cap">
+                        src="/images/snn-sub/bpn.png" alt="Card image cap">
                     <div class="card-body">
-                        <h4 class="card-title">Fuzzy Operations(U,I,C)</h4>
+                        <h4 class="card-title">SNN using BPN</h4>
                         <p class="card-text">
                         </p>
-                        <button type="button" class="button" onclick="location.href='{{route('fuzzyset-sub.fuzzy')}}'">Let's GO</button>
+                        <button type="button" class="button" onclick="location.href='{{route('snn-sub.bpn')}}'">Let's GO</button>
                     </div>
                 </div>
             </div>

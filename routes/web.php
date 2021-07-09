@@ -71,7 +71,8 @@ Route::view('/demorgan-sub/maxprod_comp','demorgan-sub/maxprod_comp')->name('dem
 //fuzzyset-sub
 Route::view('/fuzzysets-sub/fuzzy','fuzzysets-sub/fuzzy')->name('fuzzyset-sub.fuzzy');
 
-
+//snn-sub
+Route::view('/snn-sub/bpn','snn-sub/bpn')->name('snn-sub.bpn');
 
 
 Auth::routes();
