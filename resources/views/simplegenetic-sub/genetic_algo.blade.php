@@ -72,7 +72,7 @@
                <hr style="width:50px;border:5px solid #A00202" class="w3-round">
                <p>It is an optimization technique, which tries to find out such values of input so that we get the best output values or results.</p>
                <div class="space"></div>
-               //https://www.analyticsvidhya.com/blog/2017/07/introduction-to-genetic-algorithm/ add images
+               <img src="/images/genetic-sub/genetic-algo/mainpage2.png" alt="image">
                <div class="space"></div>
                 
                 <ul>
