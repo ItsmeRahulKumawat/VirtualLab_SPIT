@@ -204,14 +204,16 @@ body {font-size:16px;}
     </div>
   </div>
   </div>
-
-  <!-- feedback -->
-  <div class="w3-container" id="feedback" style="margin-top:75px">
+  
+<!-- feedback -->
+<div class="w3-container" id="feedback" style="margin-top:75px">
     <h1 style="font-size:30px; margin-top:30px;"><b>Feedback.</b></h1>
     <hr style="width:50px;border:5px solid #A00202" class="w3-round">
     <p>Do you want us to improve something, Let us know we will try our best to improve it :) HAPPY LEARNING!</p>
-    <form action="/action_page.php" target="_blank">
+    <form action="{{route('fd_subform')}}" enctype="multipart/form-data">
+    @csrf
       <div class="w3-section">
+      <input type="hidden" id="fd_page_id" name="fd_page_id" value="list_02">
         <label>Name</label>
         <input class="w3-input w3-border" type="text" name="Name" required>
       </div>

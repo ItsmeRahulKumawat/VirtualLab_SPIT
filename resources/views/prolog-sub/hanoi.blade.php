@@ -229,8 +229,10 @@ stack to another rod.</p><br>
     <h1 style="font-size:30px; margin-top:30px;"><b>Feedback.</b></h1>
     <hr style="width:50px;border:5px solid #A00202" class="w3-round">
     <p>Do you want us to improve something, Let us know we will try our best to improve it :) HAPPY LEARNING!</p>
-    <form action="/action_page.php" target="_blank">
+    <form action="{{route('fd_subform')}}" method="post" enctype="multipart/form-data">
+    @csrf
       <div class="w3-section">
+      <input type="hidden" id="fd_page_id" name="fd_page_id" value="hanoi_02">
         <label>Name</label>
         <input class="w3-input w3-border" type="text" name="Name" required>
       </div>
@@ -242,7 +244,7 @@ stack to another rod.</p><br>
         <label>Message</label>
         <input class="w3-input w3-border" type="text" name="Message" required>
       </div>
-      <button type="submit" class="w3-button w3-block w3-padding-large w3-margin-bottom">Send Message</button>
+      <input type="submit" value="send message" class="w3-button w3-block w3-padding-large w3-margin-bottom">
     </form>  
   </div>
 
