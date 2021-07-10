@@ -117,7 +117,7 @@ body {font-size:16px;}
                         <h4 class="card-title">Anifs with Matlab</h4>
                         <p class="card-text">
                         </p>
-                        <button type="button" class="button" onclick="location.href='{{route('snn-sub.bpn')}}'">Let's GO</button>
+                        <button type="button" class="button" onclick="location.href='{{route('anfis-sub.impl_anfis')}}'">Let's GO</button>
                     </div>
                 </div>
             </div>
