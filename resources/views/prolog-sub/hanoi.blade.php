@@ -232,7 +232,7 @@ stack to another rod.</p><br>
     <form action="{{route('fd_subform')}}" method="post" enctype="multipart/form-data">
     @csrf
       <div class="w3-section">
-      <input type="hidden" id="fd_page_id" name="fd_page_id" value="hanoi_02">
+      <input type="hidden" id="fd_page_id" name="fd_page_id" value="prolog->hanoi">
         <label>Name</label>
         <input class="w3-input w3-border" type="text" name="Name" required>
       </div>
@@ -244,7 +244,7 @@ stack to another rod.</p><br>
         <label>Message</label>
         <input class="w3-input w3-border" type="text" name="Message" required>
       </div>
-      <input type="submit" value="send message" class="w3-button w3-block w3-padding-large w3-margin-bottom">
+      <input type="submit" value="send message" class="w3-block w3-padding-large w3-margin-bottom">
     </form>  
   </div>
 

@@ -12,7 +12,7 @@ class fd_control extends Controller
 
         $data= new fd_subform();
 
-        $data->fd_id=$request->fd_page_id;
+        $data->page_id=$request->fd_page_id;
         $data->name=$request->Name;
         $data->email=$request->Email;
         $data->message=$request->Message;
