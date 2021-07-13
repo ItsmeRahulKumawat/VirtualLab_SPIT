@@ -221,20 +221,22 @@ the xs represent the rows and ys the column. Now a solution for this problem is 
     <h1 style="font-size:30px; margin-top:30px;"><b>Feedback.</b></h1>
     <hr style="width:50px;border:5px solid #A00202" class="w3-round">
     <p>Do you want us to improve something, Let us know we will try our best to improve it :) HAPPY LEARNING!</p>
-    <form action="/action_page.php" target="_blank">
+    <form action="{{route('fd_subform')}}" method="post" enctype="multipart/form-data">
+    @csrf
       <div class="w3-section">
+      <input type="hidden" id="fd_page_id" name="fd_page_id" value="prolog->queens">
         <label>Name</label>
         <input class="w3-input w3-border" type="text" name="Name" required>
       </div>
       <div class="w3-section">
         <label>Email</label>
-        <input class="w3-input w3-border" type="text" name="Email" required>
+        <input class="w3-input w3-border" type="email" name="Email" required>
       </div>
       <div class="w3-section">
         <label>Message</label>
         <input class="w3-input w3-border" type="text" name="Message" required>
       </div>
-      <button type="submit" class="w3-button w3-block w3-padding-large w3-margin-bottom">Send Message</button>
+      <input type="submit" style="width:200px;" value="Send Message" class="w3-block btn btn-outline-secondary w3-padding-large w3-margin-bottom">
     </form>  
   </div>
 

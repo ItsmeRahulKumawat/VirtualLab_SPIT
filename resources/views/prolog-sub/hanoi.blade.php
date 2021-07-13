@@ -238,13 +238,13 @@ stack to another rod.</p><br>
       </div>
       <div class="w3-section">
         <label>Email</label>
-        <input class="w3-input w3-border" type="text" name="Email" required>
+        <input class="w3-input w3-border" type="email" name="Email" required>
       </div>
       <div class="w3-section">
         <label>Message</label>
         <input class="w3-input w3-border" type="text" name="Message" required>
       </div>
-      <input type="submit" value="send message" class="w3-block w3-padding-large w3-margin-bottom">
+      <input type="submit" style="width:200px;" value="Send Message" class="w3-block btn btn-outline-secondary w3-padding-large w3-margin-bottom">
     </form>  
   </div>
 
