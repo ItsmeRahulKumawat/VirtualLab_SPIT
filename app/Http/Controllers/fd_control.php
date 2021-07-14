@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\fd_subform;
 
 use Illuminate\Http\Request;
+use App\Models\question;
 
 class fd_control extends Controller
 {
@@ -22,4 +23,9 @@ class fd_control extends Controller
 
     }
     
+    function showquiz()
+    {
+        $data = question::all();
+        return view('beginner', ['questions'=>$data]);
+    }
 }

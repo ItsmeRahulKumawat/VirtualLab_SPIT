@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\fd_control;
 
 /*
 |--------------------------------------------------------------------------
@@ -82,7 +83,8 @@ Route::view('/quiz/advanced','quiz/advanced')->name('quiz.advanced');
 //fd form
 Route::post('/fd_subform',"fd_control@fd_subform_fn")->name('fd_subform');
 
-
+//for databse inserting
+Route::get('beg',[fd_control::class, 'showquiz']);
 
 Auth::routes();
 
