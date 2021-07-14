@@ -60,7 +60,7 @@
                 method, max-average method and max-min method. But max-min composition method is
                 best known in fuzzy logic applications.</p>
                 <div class="space"></div>
-                //Add image
+                <img src="/images/morgan-sub/max-min_comp.png" alt="image">
                 <div class="space"></div>
                 <p>Max –min composition
                 Let R1 (x, y), (x,y E A×B) and R2 (y, z) ,(y,z E B×C) be the two relations.
@@ -77,26 +77,85 @@
             <div class="w3-container" id="procedure" style="margin-top:75px">
                <h1 style="font-size:30px; margin-top:30px;"><b>Procedure.</b></h1>
                <hr style="width:50px;border:5px solid #A00202" class="w3-round">
-               <pre>Let R1 (x, y), and R2 (y, z) be defined by the following relational matrices
-                            y1   y2   y3
-                        x1 	0.2  0.5  0.7
-                    R1 = 	x2 	0.3  0.6  0.7
-                        x3 	0.4  0.8  0.9
-
-                            z1   z2
-                        y1 	1    0.8
-                    R2 = 	y2 	0.5  0.6
-                        y3 	0.4  0.3
-
-                    Now computing the max –min composition as per definition
-                    Calculations are as follow:
-                    min { μ R1 (x1,y1), μ R2 (y1.z1)}=min (0.2,1)= 0.2
-                    .........
-                                z1   z2
-                            x1 	0.5  0.5
-                    R1○ R2 (x, z) = x2 	0.5  0.6 
-                            x3 	0.5  0.6
-                    </pre>
+               <pre>Let R1 (x, y), and R2 (y, z) be defined by the following relational matrices</pre>
+               <div style="float: left;margin-right:80px">
+               <table cellpadding="5 px" style="td {border:1px solid black}">
+                     <tr>
+                        <td rowspan="4">R1 = </td>
+                        <td></td>
+                        <td>y1</td>
+                        <td>y2</td>
+                        <td>y3</td>
+                     </tr>
+                     <tr>
+                        <td>x1</td>
+                        <td>0.2</td>
+                        <td>0.5</td>
+                        <td>0.7</td>
+                     </tr>
+                     <tr>
+                        <td>x2</td>
+                        <td>0.3</td>
+                        <td>0.6</td>
+                        <td>0.7</td>
+                     </tr>
+                     <tr>
+                        <td>x3</td>
+                        <td>0.4</td>
+                        <td>0.8</td>
+                        <td>0.9</td>
+                     </tr>
+                     </table>
+                     </div>
+                     <table cellpadding="5 px">
+                     <tr>
+                        <td rowspan="4">R2 = </td>
+                        <td></td>
+                        <td>z1</td>
+                        <td>z2</td>
+                     </tr>
+                     <tr>
+                        <td>y1</td>
+                        <td>1</td>
+                        <td>0.8</td>
+                     </tr>
+                     <tr>
+                        <td>y2</td>
+                        <td>0.5</td>
+                        <td>0.6</td>
+                     </tr>
+                     <tr>
+                        <td>y3</td>
+                        <td>0.4</td>
+                        <td>0.3</td>
+                     </tr>
+                     </table><br>
+            <p>Now computing the max –min composition as per definition Calculations are as follow:<br>
+            min { μ R1 (x1,y1), μ R2 (y1.z1)}=min (0.2,1)= 0.2<br>
+            .........</p>
+                     <table cellpadding="5 px">
+                     <tr>
+                        <td rowspan="4">R1○ R2 (x, z) = </td>
+                        <td></td>
+                        <td>z1</td>
+                        <td>z2</td>
+                     </tr>
+                     <tr>
+                        <td>x1</td>
+                        <td>0.5</td>
+                        <td>0.5</td>
+                     </tr>
+                     <tr>
+                        <td>x2</td>
+                        <td>0.5</td>
+                        <td>0.6</td>
+                     </tr>
+                     <tr>
+                        <td>x3</td>
+                        <td>0.5</td>
+                        <td>0.6</td>
+                     </tr>
+                     </table>
             </div>
             <!-- simulation -->
             <div class="w3-container" id="simulation" style="margin-top:75px">

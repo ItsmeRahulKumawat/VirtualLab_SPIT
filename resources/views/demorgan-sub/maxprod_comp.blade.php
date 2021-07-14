@@ -59,7 +59,7 @@
                 called “Composition”. There are many composition methods in use , e.g. max-product
                 method, max-average method and max-min method.</p>
                 <div class="space"></div>
-                    <img src="" alt="image">
+                <img src="/images/morgan-sub/max-product.png" alt="image">
                 <div class="space"></div>
                 <p>Max product composition
                 Let R1 (x, y), (x,y E A×B) and R2 (y, z) ,(y,z E B×C) be the two relations.
@@ -71,29 +71,75 @@
             <div class="w3-container" id="procedure" style="margin-top:75px">
                <h1 style="font-size:30px; margin-top:30px;"><b>Procedure.</b></h1>
                <hr style="width:50px;border:5px solid #A00202" class="w3-round">
-               <pre>Let R1 (x, y), and R2 (y, z) be defined by the following relational matrices
-                        y1   y2   y3
-                R1=	x1 	0.4  0.6  0
-                    x2 	0.9  1    0.1
-                    
-
-                        z1   z2
-                    y1 	0.5  0.8
-                R2 = 	y2 	0.1  1
-                    y3 	0    0.6
-
-                Now computing the max productcomposition as per definition
-                Calculations are as follow:
-                max{0.4x0.5, 0.6x0.1, 0x0} = max{0.02,0.06,0} = 0.06
-                max{0.4x0.8, 0.6x1, 0x0.6} = max{0.32, 0.6, 0} = 0.6
-                max{0.9x0.5, 1x0.1, 0.1x0} = max{0.45, 0.1, 0} = 0.45
-                max{0.9x0.8, 1x1, 0.1x0.6} = max{0.72, 1, 0.06} = 1
-
-                            z1    z2
-                R1○ R2 (x, z) =	x1 	0.06  0.6
-                        x2 	0.45  1 
-
-                </pre>
+               <pre>Let R1 (x, y), and R2 (y, z) be defined by the following relational matrices</pre>
+               <div style="float: left;margin-right:80px">
+               <table cellpadding="5 px">
+               <tr>
+                  <td rowspan="3">R1 = </td>
+                  <td></td>
+                  <td>y1</td>
+                  <td>y2</td>
+                  <td>y3</td>
+               </tr>
+               <tr>
+                  <td>x1</td>
+                  <td>0.4</td>
+                  <td>0.6</td>
+                  <td>0</td>
+               </tr>
+               <tr>
+                  <td>x2</td>
+                  <td>0.9</td>
+                  <td>1</td>
+                  <td>0.1</td>
+               </tr>
+               </table></div>
+               <table cellpadding="5 px">
+               <tr>
+                  <td rowspan="4">R2 = </td>
+                  <td></td>
+                  <td>z1</td>
+                  <td>z2</td>
+               </tr>
+               <tr>
+                  <td>y1</td>
+                  <td>0.5</td>
+                  <td>0.8</td>
+               </tr>
+               <tr>
+                  <td>y2</td>
+                  <td>0.1</td>
+                  <td>1</td>
+               </tr>
+               <tr>
+                  <td>y3</td>
+                  <td>0</td>
+                  <td>0.6</td>
+               </tr>
+               </table><br>
+               <p>Now computing the max productcomposition as per definition Calculations are as follow:<br>
+               max{0.4x0.5, 0.6x0.1, 0x0} = max{0.02,0.06,0} = 0.06<br>
+               max{0.4x0.8, 0.6x1, 0x0.6} = max{0.32, 0.6, 0} = 0.6<br>
+               max{0.9x0.5, 1x0.1, 0.1x0} = max{0.45, 0.1, 0} = 0.45<br>
+               max{0.9x0.8, 1x1, 0.1x0.6} = max{0.72, 1, 0.06} = 1</p>
+               <table cellpadding="5 px">
+               <tr>
+                  <td rowspan="3">R1○ R2 (x, z) = </td>
+                  <td></td>
+                  <td>z1</td>
+                  <td>z2</td>
+               </tr>
+               <tr>
+                  <td>x1</td>
+                  <td>0.06</td>
+                  <td>0.6</td>
+               </tr>
+               <tr>
+                  <td>x2</td>
+                  <td>0.45</td>
+                  <td>1</td>
+               </tr>
+               </table>
             </div>
             <!-- simulation -->
             <div class="w3-container" id="simulation" style="margin-top:75px">

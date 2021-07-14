@@ -79,11 +79,11 @@
                <div class="space"></div>
                 <ul>
                 <li>Union function: U[µA(x), µB(x)] = Max[µA(x), µB(x)]</li>
-                <img src="/images/fuzzysets-sub/fuzzyoperations/first.png" alt="image">
+                <img src="/images/fuzzysets-sub/fuzzyoperations/third.png" alt="image">
                 <li>Intersection function: I[µA(x), µB(x)] = Min[µA(x), µB(x)]</li>
                 <img src="/images/fuzzysets-sub/fuzzyoperations/second.png" alt="image">
                 <li>Compliment function: C(µA(x))=1- µA(x)</li>
-                <img src="/images/fuzzysets-sub/fuzzyoperations/third.png" alt="image">
+                <img src="/images/fuzzysets-sub/fuzzyoperations/first.png" alt="image">
                 </ul>
             </div>
             <!-- simulation -->
