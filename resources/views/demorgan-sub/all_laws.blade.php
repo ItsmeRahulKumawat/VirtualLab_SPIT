@@ -61,7 +61,7 @@
                 [0, 1], i.e.,
                 μA : U-> [0, l]</p>
                 <div class="space"></div>
-                <img src="" alt="image">
+                <img src="/images/morgan-sub/all_law/all_law.jpg" alt="image">
                 <div class="space"></div>
                 The value of μA at u(EU), μA(u), represents the grade of membership (grade,
                 for short) of u in A and is a point in [0, 1]. 
