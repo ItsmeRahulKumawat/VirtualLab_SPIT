@@ -14,17 +14,20 @@
         @foreach($questions as $key => $question)
         <h3 class="card-header">
             {{$key+1}} )
-            {{$question->questions}}
+            {{$question->question}}
         </h3>
             <br>
                 @foreach($question->answers as $answer)
                     <h5 class="card-body">
                         <input type="radio" name="quizcheck[]" value="answer['aid']">
-                        {{$answer->answers}}
+                        {{$answer->answer}}
                     </h5>
                 @endforeach
         @endforeach
+        
     </div>
+    <div class="space"></div>
+    <button type="button" class="btn btn-outline-danger center">SUBMIT</button>
 </div>
 </form>
 <div class="footer_space"></div>

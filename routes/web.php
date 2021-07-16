@@ -77,9 +77,9 @@ Route::view('/fuzzysets-sub/fuzzy','fuzzysets-sub/fuzzy')->name('fuzzyset-sub.fu
 Route::view('/snn-sub/bpn','snn-sub/bpn')->name('snn-sub.bpn');
 
 //assignment
-Route::get('/quiz/{subject}/{difficulty_level}', [QuizController::class,  'viewQuiz'])->name('quiz.beginner');
-Route::view('/quiz/intermediate','quiz/intermediate')->name('quiz.intermediate');
-Route::view('/quiz/advanced','quiz/advanced')->name('quiz.advanced');
+Route::get('/quiz/{subject}/{difficulty_level}', [QuizController::class,  'viewQuiz'])->name('quiz.viewQuiz');
+// Route::view('/quiz/intermediate','quiz/intermediate')->name('quiz.intermediate');
+// Route::view('/quiz/advanced','quiz/advanced')->name('quiz.advanced');
 
 //fd form
 Route::post('/fd_subform',"fd_control@fd_subform_fn")->name('fd_subform');

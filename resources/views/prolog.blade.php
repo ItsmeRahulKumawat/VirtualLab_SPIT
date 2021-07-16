@@ -239,7 +239,7 @@ body {font-size:16px;}
                   <h4 class="card-title">Beginner</h4>
                   <p class="card-text">
                   </p>
-                  <button type="button" class="button" id="prolog" onclick="location.href='{{route('quiz.beginner')}}'">Ezzzzz</button>
+                  <button type="button" class="button" onclick="location.href='{{route('quiz.viewQuiz', ['prolog', 'easy'])}}'">Ezzzzz</button>
                </div>
             </div>
          </div>
@@ -251,7 +251,7 @@ body {font-size:16px;}
                   <h4 class="card-title">Intermediate</h4>
                   <p class="card-text">
                   </p>
-                  <button type="button" class="button" onclick="location.href='{{route('quiz.intermediate')}}'">Not Bad</button>
+                  <button type="button" class="button" onclick="location.href='{{route('quiz.viewQuiz', ['prolog', 'intermediate'])}}'">Not Bad</button>
                </div>
             </div>
          </div>
@@ -263,7 +263,7 @@ body {font-size:16px;}
                   <h4 class="card-title">Advanced</h4>
                   <p class="card-text">
                   </p>
-                  <button type="button" class="button" onclick="location.href='{{route('quiz.advanced')}}'">Seriously!</button>
+                  <button type="button" class="button" onclick="location.href='{{route('quiz.viewQuiz', ['prolog', 'advanced'])}}'">Seriously!</button>
                </div>
             </div>
          </div>
