@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\fd_subform;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use App\Models\question;
 
 class fd_control extends Controller
@@ -23,9 +24,16 @@ class fd_control extends Controller
 
     }
     
-    function showquiz()
-    {
-        $data = question::all();
-        return view('beginner', ['questions'=>$data]);
-    }
+    // public function showquiz()
+    // {
+    //     $var = 'prolog.easy';
+    //     $num = 0;
+    //     $i =1;
+
+    //     $quest = DB::select('select * from questions where page_id=?',[$var]);
+    //     $ans = DB::select('select * from answers where ans_id=?',[$i]);
+    
+        
+    //     return view('quiz.beginner',compact('quest','ans','i'));
+    // }
 }

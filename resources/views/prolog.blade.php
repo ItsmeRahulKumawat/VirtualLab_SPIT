@@ -239,7 +239,7 @@ body {font-size:16px;}
                   <h4 class="card-title">Beginner</h4>
                   <p class="card-text">
                   </p>
-                  <button type="button" class="button" onclick="location.href='{{route('quiz.beginner')}}'">Ezzzzz</button>
+                  <button type="button" class="button" id="prolog" onclick="location.href='{{route('quiz.beginner')}}'">Ezzzzz</button>
                </div>
             </div>
          </div>
