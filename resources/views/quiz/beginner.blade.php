@@ -2,13 +2,9 @@
 
 @extends('template')
 @section('content')
-<style>
-    input[type="radio"]{
-        height:18px;
-        width:18px;
-    }
-</style>
-<form action="check.php" method="post">
+<link rel="stylesheet" href="/css/quiz.css">
+
+<form action="{{route('CheckControl')}}" method="post">
 <div class="col-lg-8 m-auto d-block">
     <div class="card">
         @foreach($questions as $key => $question)
@@ -19,7 +15,7 @@
             <br>
                 @foreach($question->answers as $answer)
                     <h5 class="card-body">
-                        <input type="radio" name="quizcheck[]" value="answer['aid']">
+                        <input type="radio" name="quizcheck[{{$answer->question_id}}]" value= '{{$question->answer_id}}'>
                         {{$answer->answer}}
                     </h5>
                 @endforeach
@@ -27,8 +23,12 @@
         
     </div>
     <div class="space"></div>
-    <button type="button" class="btn btn-outline-danger center">SUBMIT</button>
+        <div class="wrap">
+            <button class="button">Submit</button>
+        </div>
+     <div class="space"></div>
 </div>
 </form>
+
 <div class="footer_space"></div>
 @stop

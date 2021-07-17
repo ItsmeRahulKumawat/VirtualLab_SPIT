@@ -13,5 +13,6 @@ class QuizController extends Controller
         $questions = Question::with(['answers'])->where('subject', $subject)->where('difficulty_level', $difficulty_level)->get();
         return view('quiz.beginner',compact('questions'));
     }
+    
 
 }

@@ -276,7 +276,7 @@ body {font-size:16px;}
     <h1 style="font-size:30px; margin-top:30px;"><b>Feedback.</b></h1>
     <hr style="width:50px;border:5px solid #A00202" class="w3-round">
     <p>Do you want us to improve something, Let us know we will try our best to improve it :) HAPPY LEARNING!</p>
-    <form action="{{route('fd_subform')}}" method="post" enctype="multipart/form-data">
+    <form action="" method="post" enctype="multipart/form-data">
     @csrf
       <div class="w3-section">
       <input type="hidden" id="fd_page_id" name="fd_page_id" value="prolog">
