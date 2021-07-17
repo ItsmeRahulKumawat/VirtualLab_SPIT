@@ -37,6 +37,7 @@
           <th>Email</th>
         <th>Comments</th>
         <th>Approval</th>
+        <th>Delete</th>
         
       </tr>
     </thead>
@@ -45,26 +46,28 @@
     @forelse($comments as $comment)
       <tr>
           <td>{{$comment->Name}}</td>
-          <td>{{$comment->Email}}</td>
-        <td>{{$comment->comment}}</td>
+          <td style="max-width:150px">{{$comment->Email}}</td>
+        <td style="max-width:200px">{{$comment->comment}}</td>
         <td>
               <form action="{{url('/toggle-approve')}}" method="POST">
                   @csrf
+                  
                   <input <?php if($comment->approve == 1){echo "checked";}?>  type="checkbox" name='approve'>   
                   &#8287 &#8287 &#8287
                      <input type="hidden" name="commentId" value="{{$comment->id}}">    
                   <input class="btn btn-outline-primary" type="submit" value="Done">
                   
               </form>
+              
         </td>
         <td>
             <form action="{{ url('record/delete/' . $comment->id) }}" method="POST">
             @csrf
-            <button class="btnn" type="submit"><i class="fa fa-trash-o"></i></button>
+            <button  class="btnn" type="submit"><i class="fa fa-trash-o"></i></button>
 
             </form>
         </td> 
-        <td>{{$comment->created_at}}</td>
+        <!-- <td style="max-width:80px">{{$comment->created_at}}</td> -->
       </tr>
       @empty
       <h4 style="color:red">No Data</h4>

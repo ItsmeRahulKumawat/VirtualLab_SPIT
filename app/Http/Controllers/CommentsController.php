@@ -15,7 +15,7 @@ class CommentsController extends Controller
         $comment->Email=$request->Email;
         $comment->comment=$request->comment;
         $comment->save();
-
+        
         return back();
 
     }

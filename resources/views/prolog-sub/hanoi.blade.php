@@ -9,6 +9,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" src="/css/prolog.css">
+<link rel="stylesheet" src="/css/feedback.css">
 <style>
 body {font-size:16px;}
 .w3-bar-item:hover {
@@ -245,16 +246,28 @@ stack to another rod.</p><br>
         <input class="w3-input w3-border" type="text" name="comment" required>
       </div>
       <input type="submit" style="width:200px;" value="Send Message" class="w3-block btn btn-outline-secondary w3-padding-large w3-margin-bottom">
-    </form>  
-    <div class="space"></div>
-    <h3>List of Feedbacks</h3>
-      <div class="space"></div>
+    </form>       
+  </div>
+  <div class="w3-container" id="RecentFeedbacks" style="margin-top:75px">
+    <h1 style="font-size:30px; margin-top:30px;"><b>Recent Feedbacks.</b></h1>
+    <hr style="width:50px;border:5px solid #A00202" class="w3-round">
+    @forelse($comments as $comment)
 
-      @forelse($comments as $comment)
-         <p>{{$comment->comment}}</p>
+      <div class="card" id="feedbacklist">
+      <h2 class="card-header w3-center">{{$comment->Name}}</h2>
+      <div class="card-body">
+         <h5 class="card-title w3-center">{{$comment->comment}}.</h5>
+         <a href="#feedbacklist" class="btn btn-primary w3-left">Agree</a>
+         &#8287
+         <a href="#feedbacklist" class="btn btn-danger w3-right">Disagree</a>
+      </div>
+      </div>       
       @empty
-         <h4>No comments</h4>
+         <h4>No Feedbacks</h4>
       @endforelse
+
+
+</div>
   </div>
 
 <!-- End page content -->
