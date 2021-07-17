@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\fd_control;
+use App\Http\Controllers\CommentsController;
 use App\Http\Controllers\QuizController;
 
 /*
@@ -78,10 +78,18 @@ Route::view('/snn-sub/bpn','snn-sub/bpn')->name('snn-sub.bpn');
 
 //assignment
 Route::get('/quiz/{subject}/{difficulty_level}', [QuizController::class,  'viewQuiz'])->name('quiz.viewQuiz');
+Route::get('/prolog-sub/hanoi', [CommentsController::class, 'index'])->name('prolog-sub.hanoi');
 
-//fd form
-Route::post('/fd_subform',"fd_control@fd_subform_fn")->name('fd_subform');
+//feedback
+// Route::get('/prolog-sub.hanoi', function(){
+//     $comments = Comment::all();
+//     return view('prolog-sub.hanoi')->with('comments',$comments);
+// });
 
+Route::post('/comment', [CommentsController::class, 'store']);
+
+//quizcheck
+ Route::post('/CheckControl','@CheckControl@CheckControl_Fun')->name('quiz.check');
 
 Auth::routes();
 

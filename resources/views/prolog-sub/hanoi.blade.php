@@ -229,7 +229,7 @@ stack to another rod.</p><br>
     <h1 style="font-size:30px; margin-top:30px;"><b>Feedback.</b></h1>
     <hr style="width:50px;border:5px solid #A00202" class="w3-round">
     <p>Do you want us to improve something, Let us know we will try our best to improve it :) HAPPY LEARNING!</p>
-    <form action="{{route('fd_subform')}}" method="post" enctype="multipart/form-data">
+    <form action="{{url('/comment')}}" method="post" enctype="multipart/form-data">
     @csrf
       <div class="w3-section">
       <input type="hidden" id="fd_page_id" name="fd_page_id" value="prolog->hanoi">
@@ -242,10 +242,19 @@ stack to another rod.</p><br>
       </div>
       <div class="w3-section">
         <label>Message</label>
-        <input class="w3-input w3-border" type="text" name="Message" required>
+        <input class="w3-input w3-border" type="text" name="comment" required>
       </div>
       <input type="submit" style="width:200px;" value="Send Message" class="w3-block btn btn-outline-secondary w3-padding-large w3-margin-bottom">
     </form>  
+    <div class="space"></div>
+    <h3>List of Feedbacks</h3>
+      <div class="space"></div>
+
+      @forelse($comments as $comment)
+         <p>{{$comment->comment}}</p>
+      @empty
+         <h4>No comments</h4>
+      @endforelse
   </div>
 
 <!-- End page content -->
