@@ -4,31 +4,21 @@
     input[type=checkbox]{
         transform:scale(1.5);
     }
-    /* Style buttons */
-    .btn {
-    background-color: DodgerBlue; /* Blue background */
-    border: none; /* Remove borders */
-    color: white; /* White text */
-    padding: 12px 16px; /* Some padding */
-    font-size: 16px; /* Set a font size */
-    cursor: pointer; /* Mouse pointer on hover */
-    }
+    
     .btn-outline-primary{
         width:100px;
     }
-    .trash{
-    background-color: red; /* Blue background */
-    border: none; /* Remove borders */
-    color: white; /* White text */
-    padding: 12px 16px; /* Some padding */
-    font-size: 16px; /* Set a font size */
-    cursor: pointer; /* Mouse pointer on hover */
+    .btnn{
+        border:none;
+        border-radius:50%;
+        background:transparent;
+        font-size:30px;
+        color:red;
+        margin-top:-8px;
     }
-
-    /* Darker background on mouse-over */
-    .trash:hover {
-    background-color: #cc0f0f;
-    color:white;
+    .btnn:hover{
+        background-color:red;
+        color:white;
     }
 </style>
 <head>
@@ -37,7 +27,8 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-<div class="container">
+
+<div class="container col-lg-12 d-block m-auto">
 <h2><b>Feedback Manager</b></h2>
   <table class="table table-striped">
     <thead>
@@ -69,7 +60,7 @@
         <td>
             <form action="{{ url('record/delete/' . $comment->id) }}" method="POST">
             @csrf
-            <button class="btn btn-danger" type="submit">Delete this Row</button>
+            <button class="btnn" type="submit"><i class="fa fa-trash-o"></i></button>
 
             </form>
         </td> 
@@ -83,6 +74,6 @@
 </div>
 
 
-	
+<div class="footer_space"></div>
 </body>
 @stop
