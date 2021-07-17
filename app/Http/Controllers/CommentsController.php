@@ -21,7 +21,29 @@ class CommentsController extends Controller
     }
     public function index()
     {
-        $comments=Comment::all();
+        $comments=Comment::where('approve', 1)->get();
         return view('prolog-sub.hanoi', compact('comments'));
+    }
+
+    public function dash()
+    {
+        $comments=Comment::orderBy('created_at','desc')->get();
+        return view('admindash', compact('comments'));
+    }
+    public function approval(Request $request)
+    {
+
+    	$comment= Comment::find($request->commentId);
+    	$approveVal=$request->approve;
+    	if($approveVal=='on'){
+    		$approveVal=1;
+    	}else{
+    		$approveVal=0;
+    	}
+
+    	$comment->approve=$approveVal;
+    	$comment->save();
+
+    	return back();
     }
 }

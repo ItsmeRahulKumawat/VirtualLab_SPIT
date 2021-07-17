@@ -78,15 +78,14 @@ Route::view('/snn-sub/bpn','snn-sub/bpn')->name('snn-sub.bpn');
 
 //assignment
 Route::get('/quiz/{subject}/{difficulty_level}', [QuizController::class,  'viewQuiz'])->name('quiz.viewQuiz');
-Route::get('/prolog-sub/hanoi', [CommentsController::class, 'index'])->name('prolog-sub.hanoi');
+
 
 //feedback
-// Route::get('/prolog-sub.hanoi', function(){
-//     $comments = Comment::all();
-//     return view('prolog-sub.hanoi')->with('comments',$comments);
-// });
-
 Route::post('/comment', [CommentsController::class, 'store']);
+Route::post('/toggle-approve', [CommentsController::class, 'approval']);
+Route::get('/admindash', [CommentsController::class, 'dash'])->name('admindash');
+Route::get('/prolog-sub/hanoi', [CommentsController::class, 'index'])->name('prolog-sub.hanoi');
+
 
 //quizcheck
  Route::post('/CheckControl','@CheckControl@CheckControl_Fun')->name('quiz.check');
