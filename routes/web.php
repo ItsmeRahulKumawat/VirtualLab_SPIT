@@ -83,6 +83,7 @@ Route::get('/quiz/{subject}/{difficulty_level}', [QuizController::class,  'viewQ
 //feedback
 Route::post('/comment', [CommentsController::class, 'store']);
 Route::post('/toggle-approve', [CommentsController::class, 'approval']);
+Route::post('record/delete/{id}', [CommentsController::class, 'destroy']);
 Route::get('/admindash', [CommentsController::class, 'dash'])->name('admindash');
 Route::get('/prolog-sub/hanoi', [CommentsController::class, 'index'])->name('prolog-sub.hanoi');
 
