@@ -72,14 +72,7 @@
             <button class="btn btn-danger" type="submit">Delete this Row</button>
 
             </form>
-        </td>
-        <!-- <td>
-              <form action="{{url('/deleteRec')}}" method="POST">
-                    @csrf
-                    <button class="btn trash" name="delRec"><i class="fa fa-trash"></i></button>
-                    <input type="hidden" name="delRec" value="{{$comment->id}}">  
-                </form>
-        </td> -->   
+        </td> 
         <td>{{$comment->created_at}}</td>
       </tr>
       @empty
