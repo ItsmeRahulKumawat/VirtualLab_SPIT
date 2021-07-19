@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CommentsController;
 use App\Http\Controllers\QuizController;
-
+use App\Http\Controllers\CheckControl;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -89,7 +89,7 @@ Route::get('/prolog-sub/hanoi', [CommentsController::class, 'index'])->name('pro
 
 
 //quizcheck
- Route::post('/CheckControl','@CheckControl@CheckControl_Fun')->name('quiz.check');
+//  Route::post('/CheckControl',[CheckControl::class], 'CheckControl_Fun')->name('quiz.check');
 
 Auth::routes();
 

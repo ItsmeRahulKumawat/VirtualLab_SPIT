@@ -4,7 +4,6 @@
 @section('content')
 <link rel="stylesheet" href="/css/quiz.css">
 
-<form action="{{route('CheckControl')}}" method="post">
 <div class="col-lg-8 m-auto d-block">
     <div class="card">
         @foreach($questions as $key => $question)
@@ -28,7 +27,6 @@
         </div>
      <div class="space"></div>
 </div>
-</form>
 
 <div class="footer_space"></div>
 @stop
