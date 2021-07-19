@@ -30,13 +30,15 @@
 
 <div class="container col-lg-12 d-block m-auto">
 <h2><b>Feedback Manager</b></h2>
-  <table class="table table-striped">
-    <thead>
+  <table class="table table-striped table-bordered">
+    <thead class="thead-dark">
       <tr>
-          <th>Name</th>
-          <th>Email</th>
+          <th style="width:50px">Name</th>
+          <th style="width:100px">Email</th>
+          <th style="width:100px">Page</th>
+          <th>SubPage</th>
         <th>Comments</th>
-        <th>Approval</th>
+        <th style="width:200px">Approval</th>
         <th>Delete</th>
         
       </tr>
@@ -46,8 +48,10 @@
     @forelse($comments as $comment)
       <tr>
           <td>{{$comment->Name}}</td>
-          <td style="max-width:150px">{{$comment->Email}}</td>
-        <td style="max-width:200px">{{$comment->comment}}</td>
+          <td>{{$comment->Email}}</td>
+          <td>{{$comment->Page}}</td>
+          <td>{{$comment->SubPage}}</td>
+        <td>{{$comment->comment}}</td>
         <td>
               <form action="{{url('/toggle-approve')}}" method="POST">
                   @csrf
