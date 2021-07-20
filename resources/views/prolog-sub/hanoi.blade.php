@@ -233,7 +233,8 @@ stack to another rod.</p><br>
     <form action="{{url('/comment')}}" method="post" enctype="multipart/form-data">
     @csrf
       <div class="w3-section">
-      <input type="hidden" id="fd_page_id" name="fd_page_id" value="prolog->hanoi">
+         <input type="hidden" name="Page" value="prolog">
+         <input type="hidden" name="SubPage" value="hanoi">
         <label>Name</label>
         <input class="w3-input w3-border" type="text" name="Name" required>
       </div>
@@ -251,15 +252,17 @@ stack to another rod.</p><br>
   <div class="w3-container" id="RecentFeedbacks" style="margin-top:75px">
     <h1 style="font-size:30px; margin-top:30px;"><b>Recent Feedbacks.</b></h1>
     <hr style="width:50px;border:5px solid #A00202" class="w3-round">
-    @forelse($comments as $comment)
+    
+    
+        @forelse($comments as $comment)
 
       <div class="card" id="feedbacklist">
-      <h2 class="card-header w3-center">{{$comment->Name}}</h2>
+      <h2 class="card-header">{{$comment->Name}}</h2>
       <div class="card-body">
-         <h5 class="card-title w3-center">{{$comment->comment}}.</h5>
-         <a href="#feedbacklist" class="btn btn-primary w3-left">Agree</a>
-         &#8287
-         <a href="#feedbacklist" class="btn btn-danger w3-right">Disagree</a>
+         <h5 class="card-title">{{$comment->comment}}.</h5>
+         
+         <button class="btn" id="green"><i class="fa fa-thumbs-up fa-lg" aria-hidden="true" style="color:blue"></i></button>
+      <button class="btn" id="red"><i class="fa fa-thumbs-down fa-lg" aria-hidden="true" style="color:red"></i></button>
       </div>
       </div>       
       @empty
