@@ -33,7 +33,7 @@
                     <img src="/images/about_us/rahul2.jpg">
                 </div>
                 <h3 class="title">Rahul Kumawat</h3>
-                <span class="post">Web Developer</span>
+                <span class="post">DevOps</span>
                 <ul class="social">
                     <li><a href="https://github.com/ItsmeRahulKumawat" target="_blank" class="fab fa-github"></a></li>
                     <li><a href="mailto: rahulkumawat20000.com" target="_blank" class="fa fa-envelope"></a></li>
@@ -47,7 +47,7 @@
                     <img src="/images/about_us/rutika.jpg">
                 </div>
                 <h3 class="title">Rutika Sonawane</h3>
-                <span class="post">Web Developer</span>
+                <span class="post">DevOps</span>
                 <ul class="social">
                 <li><a href="" target="_blank" class="fab fa-github"></a></li>
                     <li><a href="" target="_blank" class="fa fa-envelope"></a></li>
