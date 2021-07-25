@@ -134,6 +134,48 @@ body {font-size:16px;}
   <div class="w3-container" id="assignment" style="margin-top:75px">
     <h1 style="font-size:30px; margin-top:30px;"><b>Assignment.</b></h1>
     <hr style="width:50px;border:5px solid #A00202" class="w3-round">
+    
+    <div class="carousel-inner" role="listbox">
+      <!--First slide-->
+      <div class="carousel-item active">
+         <div class="col-md-4" style="float:left">
+            <div class="card mb-2">
+               <img class="card-img-top"
+                  src="/images/assignment/easy.jpg" alt="Card image cap">
+               <div class="card-body">
+                  <h4 class="card-title">Beginner</h4>
+                  <p class="card-text">
+                  </p>
+                  <button type="button" class="button" onclick="location.href='{{route('quiz.viewQuiz', ['supervised_nn', 'easy'])}}'">Ezzzzz</button>
+               </div>
+            </div>
+         </div>
+         <div class="col-md-4" style="float:left">
+            <div class="card mb-2">
+               <img class="card-img-top"
+                  src="/images/assignment/medium.png" alt="Card image cap">
+               <div class="card-body">
+                  <h4 class="card-title">Intermediate</h4>
+                  <p class="card-text">
+                  </p>
+                  <button type="button" class="button" onclick="location.href='{{route('quiz.viewQuiz', ['supervised_nn', 'intermediate'])}}'">Not Bad</button>
+               </div>
+            </div>
+         </div>
+         <div class="col-md-4" style="float:left">
+            <div class="card mb-2">
+               <img class="card-img-top"
+                  src="/images/assignment/hard.jpg" alt="Card image cap">
+               <div class="card-body">
+                  <h4 class="card-title">Advanced</h4>
+                  <p class="card-text">
+                  </p>
+                  <button type="button" class="button" onclick="location.href='{{route('quiz.viewQuiz', ['supervised_nn', 'advanced'])}}'">Seriously!</button>
+               </div>
+            </div>
+         </div>
+</div>
+</div>
   </div>
   
    <!-- feedback -->
@@ -165,20 +207,7 @@ body {font-size:16px;}
     <hr style="width:50px;border:5px solid #A00202" class="w3-round">
     
     
-        @forelse($comments as $comment)
-
-      <div class="card" id="feedbacklist">
-      <h2 class="card-header">{{$comment->Name}}</h2>
-      <div class="card-body">
-         <h5 class="card-title">{{$comment->comment}}.</h5>
-         
-         <button class="btn" id="green"><i class="fa fa-thumbs-up fa-lg" aria-hidden="true" style="color:blue"></i></button>
-      <button class="btn" id="red"><i class="fa fa-thumbs-down fa-lg" aria-hidden="true" style="color:red"></i></button>
-      </div>
-      </div>       
-      @empty
-         <h4>No Feedbacks</h4>
-      @endforelse
+        
 
 
 </div>
