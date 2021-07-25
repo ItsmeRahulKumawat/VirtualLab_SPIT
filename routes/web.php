@@ -86,9 +86,12 @@ Route::post('/comment', [CommentsController::class, 'store',]);
 Route::post('/toggle-approve', [CommentsController::class, 'approval']);
 Route::post('record/delete/{id}', [CommentsController::class, 'destroy']);
 Route::get('/admindash', [CommentsController::class, 'dash'])->name('admindash');
+
 // Route::get('/prolog-sub/hanoi', [CommentsController::class, 'index_hanoi'])->name('prolog-sub.hanoi');
 // Route::get('/prolog-sub/list', [CommentsController::class, 'index_list'])->name('prolog-sub.list');
-Route::get('/{Page}-sub/{SubPage}', [CommentsController::class, 'index'])->name('feedback.sub');
+Route::get('/{Page}/{SubPage}', [CommentsController::class, 'index'])->name('feedback.sub');
+
+Route::get('comments', 'CommentsController@getComments')->name('comments.list');
 
 
 //quizcheck

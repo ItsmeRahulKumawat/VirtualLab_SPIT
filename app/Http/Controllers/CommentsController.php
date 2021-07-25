@@ -10,6 +10,23 @@ use Illuminate\Support\Facades\Mail;
 
 class CommentsController extends Controller
 {
+
+    public function getComments(Request $request) {
+        if($request->has('page') && $request->has('sub_page')){
+            $comments = Comment::where('Page', $request->page)->where('approve', 1);
+            if(isset($request->sub_page)) $comments->where('SubPage', $request->sub_page);
+
+            else $comments->whereNull('SubPage');
+            return response()->json([
+                'comments' => $comments->get()
+            ]); 
+        }
+        
+        return response()->status(500)->json([
+            'message' => 'something went wrong'
+        ]); 
+    }
+
     public function store (Request $request)
     {
         $comment= new Comment();
@@ -33,17 +50,17 @@ class CommentsController extends Controller
         return back();
 
     }
-    public function index($Page,$SubPage)
-    {
-        $comments = Comment::with(['comments'])->where('Page', $Page)->where('SubPage', $SubPage)->get();
-        $comments = DB::select('select * from comments where SubPage=? and approve=?',[$Page,1]);
-        return view('feedback', compact('comments'));
-    }
-    // public function index_list()
+    // public function index($Page,$SubPage)
     // {
-    //     $comments = DB::select('select * from comments where SubPage=? and approve=?',["list",1]);
-    //     return view('prolog-sub.list', compact('comments'));
+    //     $comments = Comment::with(['comments'])->where('Page', $Page)->where('SubPage', $SubPage)->get();
+    //     $comments = DB::select('select * from comments where SubPage=? and approve=?',[$Page,1]);
+    //     return view('feedback', compact('comments'));
     // }
+    public function index_list()
+    {
+        $comments = DB::select('select * from comments where SubPage=? and approve=?',["list",1]);
+        return view('prolog-sub.list', compact('comments'));
+    }
     // public function index_monkey()
     // {
     //     $comments = DB::select('select * from comments where SubPage=? and approve=?',["monkey",1]);
