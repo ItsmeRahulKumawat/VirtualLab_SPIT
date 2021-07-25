@@ -15,7 +15,7 @@
     <br>
     <div class="col-lg-2 d-block m-auto">
         <a href="http://127.0.0.1:8000/admindash"><input class ="btnn" type="button" style="border:none; border-radius:10px ;color:white;font-size:20px ;background-color:green; width: 100px; height: 40px" value="Approve"></a>
-        <a href="http://127.0.0.1:8000/admindash"><input class ="btnn" type="button" style="border:none; border-radius:10px ;color:white;font-size:20px ;background-color:#cc0f0f;margin-left:10px; width: 100px; height: 40px" value="Delete"></a>
+        <a href="http://127.0.0.1:8000/admindash"><input class ="btnn" type="button" style="border:none; border-radius:10px ;color:white;font-size:20px ;background-color:#cc0f0f; width: 100px; height: 40px" value="Delete"></a>
     </div>
     <br>
     <b>ThankYou</b>

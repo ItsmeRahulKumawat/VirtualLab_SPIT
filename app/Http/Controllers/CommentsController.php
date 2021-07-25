@@ -28,32 +28,56 @@ class CommentsController extends Controller
             'name'=>$body,
             'feedback' => $feed
         ];
-        // $hanoi = Comment::where('SubPage', hanoi)->get();
         Mail::to("virtuallabfeed@gmail.com")->send(new FeedbackMail($details));
 
         return back();
 
     }
-    public function index()
+    public function index($Page,$SubPage)
     {
-        // $comments=Comment::where('approve', 1)->get();
-        $comments = DB::select('select * from comments where SubPage=? and approve=?',["hanoi",1]);
-        return view('prolog-sub.hanoi', compact('comments'));
+        $comments = Comment::with(['comments'])->where('Page', $Page)->where('SubPage', $SubPage)->get();
+        $comments = DB::select('select * from comments where SubPage=? and approve=?',[$Page,1]);
+        return view('feedback', compact('comments'));
     }
+    // public function index_list()
+    // {
+    //     $comments = DB::select('select * from comments where SubPage=? and approve=?',["list",1]);
+    //     return view('prolog-sub.list', compact('comments'));
+    // }
+    // public function index_monkey()
+    // {
+    //     $comments = DB::select('select * from comments where SubPage=? and approve=?',["monkey",1]);
+    //     return view('prolog-sub.monkey', compact('comments'));
+    // }
+    // public function index_puzzle()
+    // {
+    //     $comments = DB::select('select * from comments where SubPage=? and approve=?',["puzzle",1]);
+    //     return view('prolog-sub.puzzle', compact('comments'));
+    // }
+    // public function index_queens()
+    // {
+    //     $comments = DB::select('select * from comments where SubPage=? and approve=?',["list",1]);
+    //     return view('prolog-sub.queens', compact('comments'));
+    // }
 
 
 
     // public function index($Page, $SubPage) {
+        // first we have to do validation of pages and subpages need to check wetaher the pages and subpages exist or not 
+        //then we have t oset the varaible of pages and subpages based on fixed conditon
+        //on the base of pages and sunpages parameters will be called
     //     $comments = DB::select('select * from comments where SubPage=? and approve=?',["hanoi",1]);
     //     $comments = Comment::with(['comments'])->where('Page', $Page)->where('SubPage', $SubPage)->get();
     //     return view('quiz.beginner',compact('questions'));
     // }
+    
 
     public function dash()
     {
         $comments=Comment::orderBy('created_at','desc')->get();
         return view('admindash', compact('comments'));
     }
+    
     public function approval(Request $request)
     {
 
