@@ -156,10 +156,52 @@ body {font-size:16px;}
     </div>
   </div>
 
-  <!-- Assignment -->
-  <div class="w3-container" id="assignment" style="margin-top:75px">
+ <!-- Assignment -->
+ <div class="w3-container" id="assignment" style="margin-top:75px">
     <h1 style="font-size:30px; margin-top:30px;"><b>Assignment.</b></h1>
     <hr style="width:50px;border:5px solid #A00202" class="w3-round">
+    
+    <div class="carousel-inner" role="listbox">
+      <!--First slide-->
+      <div class="carousel-item active">
+         <div class="col-md-4" style="float:left">
+            <div class="card mb-2">
+               <img class="card-img-top"
+                  src="/images/assignment/easy.jpg" alt="Card image cap">
+               <div class="card-body">
+                  <h4 class="card-title">Beginner</h4>
+                  <p class="card-text">
+                  </p>
+                  <button type="button" class="button" onclick="location.href='{{route('quiz.viewQuiz', ['morgan', 'easy'])}}'">Ezzzzz</button>
+               </div>
+            </div>
+         </div>
+         <div class="col-md-4" style="float:left">
+            <div class="card mb-2">
+               <img class="card-img-top"
+                  src="/images/assignment/medium.png" alt="Card image cap">
+               <div class="card-body">
+                  <h4 class="card-title">Intermediate</h4>
+                  <p class="card-text">
+                  </p>
+                  <button type="button" class="button" onclick="location.href='{{route('quiz.viewQuiz', ['morgan', 'intermediate'])}}'">Not Bad</button>
+               </div>
+            </div>
+         </div>
+         <div class="col-md-4" style="float:left">
+            <div class="card mb-2">
+               <img class="card-img-top"
+                  src="/images/assignment/hard.jpg" alt="Card image cap">
+               <div class="card-body">
+                  <h4 class="card-title">Advanced</h4>
+                  <p class="card-text">
+                  </p>
+                  <button type="button" class="button" onclick="location.href='{{route('quiz.viewQuiz', ['morgan', 'advanced'])}}'">Seriously!</button>
+               </div>
+            </div>
+         </div>
+</div>
+</div>
   </div>
   
    <!-- feedback -->
