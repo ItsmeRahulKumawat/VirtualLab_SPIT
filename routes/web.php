@@ -35,14 +35,14 @@ Route::view('/genetic','genetic')->name('genetic');
 Route::view('/anfis','anfis')->name('anfis');
 
 //prolog-sub
-Route::view('/prolog-sub/monkey','prolog-sub/monkey')->name('prolog-sub.monkey');
-Route::view('/prolog-sub/list','prolog-sub/list')->name('prolog-sub.list');
-Route::view('/prolog-sub/hanoi','prolog-sub/hanoi')->name('prolog-sub.hanoi');
-Route::view('/prolog-sub/sudoku','prolog-sub/sudoku')->name('prolog-sub.sudoku');
-Route::view('/prolog-sub/puzzle','prolog-sub/puzzle')->name('prolog-sub.puzzle');
-Route::view('/prolog-sub/queens','prolog-sub/queens')->name('prolog-sub.queens');
-Route::view('/prolog-sub/tictactoe','prolog-sub/tictactoe')->name('prolog-sub.tictactoe');
-Route::view('/prolog-sub/waterjug','prolog-sub/waterjug')->name('prolog-sub.waterjug');
+Route::view('/prolog/monkey','prolog-sub/monkey')->name('prolog-sub.monkey');
+Route::view('/prolog/list','prolog-sub/list')->name('prolog-sub.list');
+Route::view('/prolog/hanoi','prolog-sub/hanoi')->name('prolog-sub.hanoi');
+Route::view('/prolog/sudoku','prolog-sub/sudoku')->name('prolog-sub.sudoku');
+Route::view('/prolog/puzzle','prolog-sub/puzzle')->name('prolog-sub.puzzle');
+Route::view('/prolog/queens','prolog-sub/queens')->name('prolog-sub.queens');
+Route::view('/prolog/tictactoe','prolog-sub/tictactoe')->name('prolog-sub.tictactoe');
+Route::view('/prolog/waterjug','prolog-sub/waterjug')->name('prolog-sub.waterjug');
 
 //mp-sub
 Route::view('/mp-sub/activate','mp-sub/activate')->name('mp-sub.activate');
