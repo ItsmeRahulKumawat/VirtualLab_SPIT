@@ -1,3 +1,7 @@
+ <head>
+ <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+ </head>
+ 
  <!-- feedback -->
 <div class="w3-container" id="feedback" style="margin-top:75px">
     <h1 style="font-size:30px; margin-top:30px;"><b>Feedback.</b></h1>
@@ -19,6 +23,8 @@
         <label>Message</label>
         <input class="w3-input w3-border" type="text" name="comment" required>
         </div>
+        <div class="g-recaptcha" data-sitekey="6LffVL0bAAAAANlqWVhn_cnMcMahfv-OLrvUjLBf"></div>
+        <div class="space"></div>
         <input type="submit" style="width:200px;" value="Send Message" class="w3-block btn btn-outline-secondary w3-padding-large w3-margin-bottom">
     </form>       
 </div>
