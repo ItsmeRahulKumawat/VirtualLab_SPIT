@@ -207,7 +207,20 @@ body {font-size:16px;}
     <hr style="width:50px;border:5px solid #A00202" class="w3-round">
     
     
-        
+        @forelse($comments as $comment)
+
+      <div class="card" id="feedbacklist">
+      <h2 class="card-header">{{$comment->Name}}</h2>
+      <div class="card-body">
+         <h5 class="card-title">{{$comment->comment}}.</h5>
+         
+         <button class="btn" id="green"><i class="fa fa-thumbs-up fa-lg" aria-hidden="true" style="color:blue"></i></button>
+      <button class="btn" id="red"><i class="fa fa-thumbs-down fa-lg" aria-hidden="true" style="color:red"></i></button>
+      </div>
+      </div>       
+      @empty
+         <h4>No Feedbacks</h4>
+      @endforelse
 
 
 </div>
