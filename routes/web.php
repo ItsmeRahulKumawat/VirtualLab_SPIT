@@ -89,3 +89,7 @@ Route::get('beg',[fd_control::class, 'showquiz']);
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+//admin_login
+Route::get('/admin','AdminController@login');
+Route::get('/admin/dashboard','AdminController@addQ');
