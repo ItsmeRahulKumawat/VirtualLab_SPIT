@@ -320,10 +320,30 @@ body.fixed .header-fixed .header-limiter nav {
       <!-- <div class="container"> -->
       <!-- <div class="row"> -->
 
-      <div>
+      <div style="height:200px;background-image: linear-gradient(to bottom, white, black);" id="footer" class="fotters">
+         <p style="color:white;font-size:15px;">(91)-(022)-26707440, 26287250</p>
+         <p style="color:white;font-size:15px;">Mail us on : virtuallabfeed@gmail.com</p>
+         <p style="color:white;font-size:15px;">Bharatiya Vidya Bhavans Sardar Patel Institute of Technology
+            Munshi Nagar, Andheri (West), Mumbai 400 058
+         </p>
+         <p>Copyright © 2021 <a href="#">VirtualLab</a> All rights reserved</p>
+         <p>
+         <ul id="" class="cnss-social-icon " style="text-align:center;">
+            <li class="cn-fa-facebook cn-fa-icon " style="display:inline-block;"><a class="" target="_blank" href="https://www.facebook.com/SPITCOLLEGE/" title="Facebook" style="width:18px;height:18px;padding:3px 0;margin:2px;color: #ffffff;border-radius: 50%;"><i title="Facebook" style="font-size:12px;" class="fa fa-facebook"></i></a></li>
+            <li class="cn-fa-twitter cn-fa-icon " style="display:inline-block;"><a class="" target="_blank" href="https://twitter.com/bvbspit" title="Twitter" style="width:18px;height:18px;padding:3px 0;margin:2px;color: #ffffff;border-radius: 50%;"><i title="Twitter" style="font-size:12px;" class="fa fa-twitter"></i></a></li>
+            <li class="cn-fa-linkedin cn-fa-icon " style="display:inline-block;"><a class="" target="_blank" href="https://www.linkedin.com/school/bhartiya-vidya-bhavans-sardar-patel-institute-of-technology-munshi-nagar-andheri-mumbai/" title="LinkedIn" style="width:18px;height:18px;padding:3px 0;margin:2px;color: #ffffff;border-radius: 50%;"><i title="LinkedIn" style="font-size:12px;" class="fa fa-linkedin"></i></a></li>
+         </ul>
+         </p>
+         <div>
+            <div class="col-md-6">
+               <button id="scroll-to-top">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-circle-fill footer_height" viewBox="0 0 16 16">
+                     <path d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
+                  </svg>
+               </button>
+            </div>
+         </div>
 
-      </div>
-      <div class="footer_space"></div>
 
       <div class="clear"></div>
       <script type="text/javascript">
