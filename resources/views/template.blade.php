@@ -323,7 +323,7 @@ body.fixed .header-fixed .header-limiter nav {
       <div>
 
       </div>
-      
+      <div class="footer_space"></div>
 
       <div class="clear"></div>
       <script type="text/javascript">
