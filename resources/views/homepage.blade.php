@@ -1,9 +1,9 @@
 @extends('template')
 @section('content')
 <div class="main">
-<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+
   <div class="w3-right">
-    <span class="w3-text-white w3-animate-bottom" style="margin-right:30px;">VIRTUAL LAB</span>
+    <!-- <span class="w3-text-white w3-animate-bottom" style="margin-right:30px;">VIRTUAL LAB</span> -->
   </div>
 </header>
 <div class="container" style="min-height: 700px;">

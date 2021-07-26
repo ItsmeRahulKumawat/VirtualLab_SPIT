@@ -6,9 +6,7 @@
 <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
 
 <style>
-*{
-  font-family:verdana, sans-serif;
-}
+
 </style>
 
 <div class="container">
