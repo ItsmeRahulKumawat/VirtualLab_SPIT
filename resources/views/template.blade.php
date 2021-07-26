@@ -249,7 +249,7 @@ body.fixed .header-fixed .header-limiter nav {
 
 	<div class="header-limiter">
 
-		<h1><a href="#" style="font-size:50px">VIRTUAL LAB<span style="color:black">SPIT</span></a></h1>
+		<h1 class="w3-animate-left"><a href="#" style="font-size:50px">VIRTUAL LAB<span class="w3-animate-right" style="color:black">SPIT</span></a></h1>
 
 		<nav>
 			<a class="aone" href="/homepage"><b>Home</b></a>

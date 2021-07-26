@@ -17,7 +17,7 @@ use App\Http\Controllers\MailController;
 */
 
 Route::get('/', function () {
-    return view('template');
+    return view('/homepage');
 });
 
 Route::view('/homepage','homepage')->name('homepage');
