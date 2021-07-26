@@ -88,7 +88,7 @@
 }
 
 .header-fixed .header-limiter nav {
-	font:16px Arial, Helvetica, sans-serif;
+	font:18px Arial, Helvetica, sans-serif;
 	line-height: 40px;
 	float: right;
 }
@@ -137,7 +137,7 @@ body.fixed .header-fixed .header-limiter h1 {
 
 body.fixed .header-fixed .header-limiter nav {
 	line-height: 28px;
-	font-size: 13px;
+	font-size: 18px;
 }
 
 
@@ -319,42 +319,12 @@ body.fixed .header-fixed .header-limiter nav {
       <!-- <footer class="font-small text-white mt-5"> -->
       <!-- <div class="container"> -->
       <!-- <div class="row"> -->
-      <div id="footer" class="fotters">
-         <p class="footerwhite">
-            <a class="anchor" href='http://www.spit.ac.in/'>Home</a> | 
-            <a class="anchor"  href='http://www.aicte-india.org/' target='_blank'>AICTE</a> | 
-            <a class="anchor"  href='http://www.mu.ac.in/' target='_blank'>Mumbai University</a> | 
-            <a class="anchor"  href='http://www.dtemaharashtra.gov.in/' target='_blank'>DTE</a> |
-            <a class="anchor"  href='http://www.spit.ac.in/wp-content/uploads/SPITVirtualTour/SPIOT_Templates/SPIOTFL' target='_blank'>Campus Virtual Tour</a> |  
-            <a class="anchor"  href='http://mail.spit.ac.in'>Webmail</a> | 
-            <a class="anchor"  href='http://www.spit.ac.in/about/contact/'>Contact</a> | 
-         </p>
-         <p class="footerwhite">
-            <a class="anchor"  href='http://www.spit.ac.in/terms-conditions/'>Terms & Conditions</a> |
-            <a class="anchor"  href='http://www.spit.ac.in/privacy-policy/'>Privacy Policy</a> |
-            <a class="anchor"  href='http://www.spit.ac.in/refund-cancellation-policy/'>Refund/Cancellation Policy</a>
-         </p>
-         <p >Bharatiya Vidya Bhavans Sardar Patel Institute of Technology
-            Munshi Nagar, Andheri (West), Mumbai 400 058
-         </p>
-         <p>(91)-(022)-26707440, 26287250</p>
-         <p>
-         <ul id="" class="cnss-social-icon " style="text-align:center;">
-            <li class="cn-fa-facebook cn-fa-icon " style="display:inline-block;"><a class="" target="_blank" href="https://www.facebook.com/SPITCOLLEGE/" title="Facebook" style="width:18px;height:18px;padding:3px 0;margin:2px;color: #ffffff;border-radius: 50%;"><i title="Facebook" style="font-size:12px;" class="fa fa-facebook"></i></a></li>
-            <li class="cn-fa-twitter cn-fa-icon " style="display:inline-block;"><a class="" target="_blank" href="https://twitter.com/bvbspit" title="Twitter" style="width:18px;height:18px;padding:3px 0;margin:2px;color: #ffffff;border-radius: 50%;"><i title="Twitter" style="font-size:12px;" class="fa fa-twitter"></i></a></li>
-            <li class="cn-fa-linkedin cn-fa-icon " style="display:inline-block;"><a class="" target="_blank" href="https://www.linkedin.com/school/bhartiya-vidya-bhavans-sardar-patel-institute-of-technology-munshi-nagar-andheri-mumbai/" title="LinkedIn" style="width:18px;height:18px;padding:3px 0;margin:2px;color: #ffffff;border-radius: 50%;"><i title="LinkedIn" style="font-size:12px;" class="fa fa-linkedin"></i></a></li>
-         </ul>
-         </p>
-         <div>
-            <div class="col-md-6">
-               <button id="scroll-to-top">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-circle-fill footer_height" viewBox="0 0 16 16">
-                     <path d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
-                  </svg>
-               </button>
-            </div>
-         </div>
+
+      <div>
+
       </div>
+      
+
       <div class="clear"></div>
       <script type="text/javascript">
          $(document).ready(function () {
